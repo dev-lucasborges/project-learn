@@ -1,0 +1,532 @@
+/* VAR COLORS */
+
+
+
+
+
+/*  CSS REUSABLE */
+
+::-webkit-scrollbar{
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background: #65b47b;
+  border-radius: 9px;
+}
+
+::-webkit-resizer{
+  height: 10px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+  background-color: #282828;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+a:after{
+  transition: all 0.4s ease;
+}
+
+/*  CSS REUSABLE END */
+
+
+.uil-angle-down{
+  color: #ce4e3f;
+  font-size: 80px;
+  position: absolute;
+  bottom: 30px;
+  right: 640px;
+}
+
+.header__container {
+  position: relative;
+  width: auto;
+  height: 70px;
+  padding: 15px;
+}
+
+.uil-diary {
+  position: absolute;
+  font-size: 60px;
+  color: #65b47b;
+  left: 50px;
+  bottom: -18px;
+}
+
+.header__title {
+  position: absolute;
+  left: 150px;
+  bottom: 07px;
+  color: white;
+}
+
+.header__aboutUs {
+  font-weight: 400;
+  border-radius: 200px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 2px white;
+  font-size: 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 12px;
+  color: white;
+  margin-right: 70px;
+}
+
+.header__contactUs {
+  font-weight: 400;
+  border-radius: 2px;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: solid white;
+  font-size: 20px;
+  position: absolute;
+  right: 200px;
+  bottom: 12px;
+  color: white;
+}
+
+.container1{
+    width: auto;
+    height: 547px;
+    background-color: #282828;
+}
+
+.main__subText{
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  left: 70px;
+  top: 190px;
+  font-size: 20px;
+}
+
+.main__subText2{
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  left: 490px;
+  top: 1490px;
+  font-size: 20px;
+}
+
+.main__subText3{
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  left: 50px;
+  top: 360px;
+  font-size: 20px;
+}
+
+.main__png{
+  width: 490px;
+  margin-right: 90px;
+}
+
+.main__ftText{
+  position: absolute;
+  left: 70px;
+  bottom: 140px;
+  font-weight: 100;
+  color: white;
+  border: solid 1px white;
+  border-radius: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.main__ftText:hover{
+  bottom: 137px;
+  
+}
+.main__text{
+    position: absolute;
+    color: #eb4b38;
+    left: 70px;
+    top:228px;
+    font-size: 55px;
+    max-width: 690px;
+}
+
+.main__image{
+    position: absolute;
+    right: 0px;
+}
+
+.container2{
+    position: relative;
+    width: auto;
+    height: 547px;
+
+}
+
+.card__box{
+    background-color: #62d181;
+    position: absolute;
+    top: 1500px;
+    left: 50px;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px ;
+}
+
+.card{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:10px ;
+    text-align: center;
+    right: 0;
+    margin-right: 15px;
+}
+
+.card2{
+  position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:10px ;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.card3{
+  position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:10px ;
+    text-align: center;
+    float: right;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.card4{
+  position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:10px ;
+    text-align: center;
+    
+}
+
+.card__text{
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.uil-search{
+  position: absolute;
+  font-size: 30px;
+  bottom: 30px;
+  left: 57px;
+  border: black solid 2px;
+  border-radius:100px ;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.uil-search:hover{
+  background-color: #282828;
+  color: white;
+  transition: 0.4s;
+}
+
+#oloco{
+  color: white;
+  font-weight: bold;
+}
+
+#oloco:hover{
+  background: 0;
+}
+.second__text{
+    left: 50px;
+    bottom: 130px;
+    position: absolute;
+    color: #eb4b38;
+    font-size: 50px;
+    max-width: 710px;
+
+}
+
+.third__text{
+  left: 510px;
+  top: 1300px;
+  position: absolute;
+  color: #eb4b38;
+  font-size: 50px;
+  max-width: 710px;
+}
+
+.previewNotes{
+  width: 400px;
+  position: absolute;
+  right: 75px;
+  border-radius: 9px;
+  bottom: 105px;
+}
+
+.header__aboutUs2{
+  font-weight: 400;
+  border-radius: 200px;
+  padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 2px white;
+  font-size: 40px;
+  position: absolute;
+  right: 410px;
+  top: 1400px;
+  color: white;
+  margin-right: 70px;
+}
+
+.header__aboutUs3{
+  font-weight: 400;
+  border-radius: 200px;
+  padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 2px white;
+  font-size: 40px;
+  position: absolute;
+  right: 560px;
+  top: 1400px;
+  color: white;
+  margin-right: 70px;
+}
+
+/* ---------------------------------- FORMS STYLE'S ----------------------------------- */
+
+.formContainer{
+  text-align: center;
+  background: #303030;
+  width: 400px;
+  height:500px;
+  border-radius: 9px;
+  position: absolute;
+  right: 480px;
+  top: 50px;
+}
+
+.formLogo{
+  position: absolute;
+  left: 648px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  top: 3px;
+  font-size: 35px;
+}
+
+.formLogo:hover{
+  background: 0;
+  color: #62d181;
+}
+
+.formContent{
+  color: #eb4b38;
+  margin-top: 20px;
+  font-size: 14px;
+  background-color:#343434 ;
+  border-radius: 9px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 7px;
+  padding-bottom:7px ;
+}
+
+input{
+  width: 330px;
+  height: 30px;
+  border: 0;
+  background-color: #404040;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.formSubtitle{
+  position: absolute;
+  left: 30px;
+  top: 223px;
+  color: white;
+}
+
+.formSubtitle2{
+  position: absolute;
+  left: 30px;
+  top: 283px;
+  color: white;
+}
+
+#anoLetivo{
+  width: 340px;
+  height: 30px;
+  border: 0;
+  background-color: #404040;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.showPasswordd{
+  position: absolute;
+  background: 0;
+  border: 0;
+  top: 135px;
+  right: 30px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: 4s;
+}
+.showPasswordd:hover{
+  background: none;
+  color: #eb4b38;
+
+}
+
+#clickmeLink{
+  color: white;
+  text-decoration: solid;
+}
+
+#clickmeLink:hover{
+  background: 0;
+  color: #62d181;
+}
+
+.container2{
+  height: 500px;
+  position: relative;
+}
+
+.container3{
+  height: 600px;
+}
+
+
+/* ------------------------------------- AVA'S PAGE STYLE'S --------------------------------- */
+.ct{
+  text-align: center;
+}
+
+.bd{
+  background-color: #282828;
+  margin-bottom: 100px;
+}
+
+.headerAva{
+  z-index: 20;
+  background-color: #404040;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.uil-bars{
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  bottom: -5px;
+  overflow: hidden;
+}
+
+.avaTitle{
+  text-align: center;
+  font-size: 100px;
+  padding-top: 40px;
+  color: #62d181;
+}
+
+
+.war, .succ{
+  margin-right: 40px;
+}
+
+.succ{
+  margin-left: 40px;
+}
+
+.avisosTitle{
+  color: white;
+}
+.avisosSubtitle{
+  margin-left: 40px;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+.uil-angle-down{
+  font-size: 90px;
+  color: #62d181;
+  text-align: center;
+  position: relative;
+  left: 630px;
+  bottom: 9px;
+}
+
