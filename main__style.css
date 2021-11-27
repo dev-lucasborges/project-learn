@@ -3,7 +3,7 @@
 :root {
     /* tomato */
     --primary-color: 235,55,64;
-  
+    --gradient:linear-gradient(-45deg, #ff4635 0%, #df1300 100%);
     /* white */
     --text-color: 256, 256, 256;
 
@@ -171,7 +171,13 @@ body {
 }
 
 .main__text{
-    color: rgb(var(--primary-color));
+  display: flex;
+  background: #FF4635;
+  background: -webkit-radial-gradient(ellipse farthest-corner at left center, #FF4635 0%, #DF1300 100%);
+  background: -moz-radial-gradient(ellipse farthest-corner at left center, #FF4635 0%, #DF1300 100%);
+  background: radial-gradient(ellipse farthest-corner at left center, #FF4635 0%, #DF1300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-weight: 500;
     font-size: 6vh;
     max-width: 700px;
@@ -201,7 +207,7 @@ body {
 
 .main__img{
     position: absolute;
-    bottom: 2rem;
+    bottom: 9.7rem;
     right: 1rem;
     display: flex;
     width: 40%;
