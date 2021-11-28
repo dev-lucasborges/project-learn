@@ -213,7 +213,7 @@ body {
     right: 1rem;
     display: flex;
     z-index: 10;
-    top: -110px;
+    top: 60px;
 }
 
 @media (max-width: 749px) {
