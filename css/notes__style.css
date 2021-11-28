@@ -1,17 +1,26 @@
 /*      COLORS      */
 
+
 :root {
     /* tomato */
-    --primary-color: 235,55,64;
-    --gradient:linear-gradient(-45deg, #ff4635 0%, #df1300 100%);
+    --primary-color: 255,69,58; /*#ff453a*/
+
     /* white */
-    --text-color: 256, 256, 256;
+    --text-color: 255, 256, 256; 
 
     /* gray-f*/
-    --secondary-color: 40,40,40;
+    --secondary-color: 18,18,18;
 
     /* gray-w*/
-    --body-color-dark: 50,50,50;
+    --body-color-dark: 28,28,30; /*#1c1c1e*/
+    --body-color-dark2: 44,44,46; /*#2c2c2e*/ 
+
+    /*green*/
+    --text-green-color: 48,309,88;
+    /*yellow*/
+    --text-yellow-color:255,214,10;
+    /*red*/
+    --text-red-color:255,69,58;
 }
 
 
@@ -222,7 +231,7 @@ body{
 }
 
 .tablee tbody tr:nth-child(even){
-	background-color: #202020;
+	background-color: rgb(var(--body-color-dark2));
 }
 
 #total{
@@ -230,15 +239,15 @@ body{
 }
 
 .acima{
-    color: rgb(65, 211, 128);
+    color: rgb(var(--text-green-color));
 }
 
 .medio{
-    color: #ffc107;
+    color:rgb(var(--text-yellow-color));
 }
 
 .ruim{
-    color: red;
+    color: rgb(var(--text-red-color));
 }
 
 .disable{
@@ -368,7 +377,7 @@ body{
 }
 
 .tr-darknest{
-    background-color: #202020;
+    background-color: rgb(var(--body-color-dark2));
 }
 
 #total{
