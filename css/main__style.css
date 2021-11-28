@@ -320,9 +320,6 @@ body {
     transition: 0.3s ease;
 }
 
-.ccc{
-    margin-left: 36%;
-}
 
 @media (max-width: 749px){
     .third__text{
@@ -334,5 +331,9 @@ body {
         margin-left: 1.7rem;
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .go-to__btn{
+      text-align: center !important;
     }
 }
