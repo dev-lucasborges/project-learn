@@ -60,6 +60,116 @@ a{
 
 /*      REUSABLE END        */
 
+/*      NAVBAR      */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+#header li{
+  border: 0;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 3rem;
+}
+#header ul {
+  display: flex;
+}
+
+#header ul li {
+
+  list-style: none;
+  padding: 10px 15px;
+}
+#header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+#header li:hover{
+    background-color: var(--body-color-dark);
+}
+#header ul li a:hover {
+  border-bottom: 3px solid;
+  border-color: rgb(var(--primary-color));
+}
+
+#header ul li img {
+  margin-right: 30px;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 749px) {
+  #header ul {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh- 80px);
+    padding: 20px;
+    overflow: auto;
+    background-color: #111;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  #header {
+    background-color: #111;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  #header li{
+      border: 0;
+      text-align: left;
+  }
+
+  #header.active1 ul {
+    opacity: 1;
+    top: 75px;
+  }
+
+  #header ul li a {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .toggle {
+    z-index: 2;
+    color: var(--primary-color);
+    display: block;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    background-image: url(./assets/bars.svg);
+    cursor: pointer;
+  }
+  #header.active1 .toggle {
+    background-image: url(./assets/times.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+/*        NAVBAR END      */
+
 /* ---------------------------------- FORMS STYLE'S ----------------------------------- */
 
 .formContainer{
@@ -244,4 +354,11 @@ input[type=number] {
   bottom: 9px;
 }
 
-/* LIBRARY STYLE'S*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/notes.svg">
+  <title>Learn - Notas</title>
+   <!--------------------------------- links-------------------------------------->
+   <link rel="stylesheet" href="/bootstrap.css">
+	<link rel="stylesheet" href="../css/notes__style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="../js/sistema_de_busca.js"></script>
+
+<!------------------------------------- links end's-------------------------------->
+</head>
+
+<!------------------------------------- navbar ------------------------------------>
+<header id="header">
+  <div>
+    <h2 class="logo">learn</h2>
+  </div>
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="about.html">Sobre</a></li>
+    <li><a href="./form.html">Matricúla</a></li>
+    <li><a href="./library.html">Biblioteca</a></li>
+  </ul>
+  <div class="toggle" onclick="toggle()"></div>
+</header>
+
+<!------------------------------------- navbar end------------------------------------>
+
+
+<body>
+<div class="info">
+  <h1 class="title">  NOTAS</h1>
+  <p class="sub__title">SUAS NOTAS SÃO RESPONSABILIDADE DO SEUS PROFESSORES</p>
+</div>
+   <table class="tablee">
+     <thead>
+     	<tr>
+     	 <th>Bimestre</th>
+     	 <th>Português</th>
+     	 <th>Matematica</th>
+     	 <th>Quimíca</th>
+     	 <th>Física</th>
+        <th>Biologia</th>
+        <th>ED. Física</th>
+        <th>Geografia</th>
+        <th>Filosofia</th>
+        <th>História</th>
+        <th>Língua Estrangeira</th>
+        <th>Sociologia</th>
+     	</tr>
+     </thead>
+     <tbody>
+     	  <tr>
+     	  	  <td class="m-thead" data-label="Bimestre"> 1° </td>
+
+     	  	  <td data-label="Português">7,50</td>
+
+     	  	  <td data-label="Matematica">5,00</td>
+
+     	  	  <td data-label="Quimíca">7,00</td>
+
+     	  	  <td data-label="Física">5,00</td>
+
+             <td data-label="Biologia">6,00</td>
+
+             <td data-label="ED. Física">8,40</td>
+
+             <td data-label="Geografia">5,00</td>
+
+             <td data-label="Filosofia">5,00</td>
+
+             <td data-label="História">5,00</td>
+
+             <td data-label="Língua Estrangeira">5,00</td>
+
+             <td data-label="Sociologia">5,00</td>
+     	  </tr>
+
+     	  <tr>
+
+          <td class="m-thead" data-label="Bimestre"> 2° </td>
+
+          <td data-label="Português">7,00</td>
+
+          <td data-label="Matematica">5,00</td>
+
+          <td data-label="Quimíca">8,00</td>
+
+          <td data-label="Física">5,00</td>
+
+          <td data-label="Biologia">5,00</td>
+
+          <td data-label="ED. Física">8,00</td>
+
+          <td data-label="Geografia">9,00</td>
+
+          <td data-label="Filosofia">9,00</td>
+
+          <td data-label="História">8,50</td>
+
+          <td data-label="Língua Estrangeira">5,00</td>
+
+          <td data-label="Sociologia">5,50</td>
+      </tr>
+
+      <tr>
+        <td class="m-thead" data-label="Bimestre"> 3° </td>
+
+        <td data-label="Português">7,50</td>
+
+        <td data-label="Matematica">5,00</td>
+
+        <td data-label="Quimíca">10,00</td>
+
+        <td data-label="Física">8,50</td>
+
+        <td data-label="Biologia">5,00</td>
+
+        <td data-label="ED. Física">8,80</td>
+
+        <td data-label="Geografia">7,00</td>
+
+        <td data-label="Filosofia">8,80</td>
+
+        <td class="ruim" data-label="História">1,00</td>
+
+        <td data-label="Língua Estrangeira">5,00</td>
+
+        <td data-label="Sociologia">7,00</td>
+    </tr>
+
+    <tr class="disable">
+      <td data-label="Bimestre"> 4° </td>
+
+      <td data-label="Português">X</td>
+
+      <td data-label="Matematica">X</td>
+
+      <td data-label="Quimíca">X</td>
+
+      <td data-label="Física">X</td>
+
+      <td data-label="Biologia">X</td>
+
+      <td data-label="ED. Física">X</td>
+
+      <td data-label="Geografia">X</td>
+
+      <td data-label="Filosofia">X</td>
+
+      <td data-label="História">X</td>
+
+      <td data-label="Língua Estrangeira">X</td>
+
+      <td data-label="Sociologia">X</td>
+  </tr>
+
+  <tr id="total">
+    <td data-label="Bimestre">Total</td>
+
+    <td class="acima"data-label="Português">22</td>
+
+    <td class="medio" data-label="Matematica">15</td>
+
+    <td class="acima" data-label="Quimíca">25</td>
+
+    <td class="medio"data-label="Física">18,5</td>
+
+    <td class="medio" data-label="Biologia">16</td>
+
+    <td class="acima" data-label="ED. Física">23,6</td>
+
+    <td class="acima" data-label="Geografia">21</td>
+
+    <td class="acima" data-label="Filosofia">22,8</td>
+
+    <td class="medio" data-label="História">14,5</td>
+
+    <td class="medio" data-label="Língua Estrangeira">15</td>
+
+    <td class="medio" data-label="Sociologia">17,5</td>
+</tr>
+     </tbody>
+   </table>
+<div class="description">
+  <p class="acima">*Suas notas estão dentro ou acima da média necessária para aprovação :)</p>
+  <p class="medio">*Se esforce só mais um pouco! suas notas <b>ainda não são</b> o suficiente para aprovação</p>
+  <p class="ruim">*Poxa, suas notas estão <b>abaixo</b> da média</p>
+</div>
+<!------------------------------------- notes end ---------------------------------------->
+
+
+
+<div class="info">
+  <h1 class="title">AULAS</h1>
+  <p class="sub__title">ATUALIZADOS BIMESTRALMENTE</p>
+</div>
+   <table class="tablee2">
+     <thead>
+     	<tr>
+     	 <th>Hora</th>
+     	 <th>Segunda</th>
+     	 <th>Terça</th>
+     	 <th>Quarta</th>
+     	 <th>Quinta</th>
+        <th>Sexta</th>
+       
+     	</tr>
+     </thead>
+     <tbody>
+     	  <tr>
+     	  	  <td class="m-thead" data-label="Horas"> 7:00 até 7:50 </td>
+
+     	  	  <td class="tr-darknest" data-label="Segunda">HORARIO VAGO</td>
+
+     	  	  <td data-label="Terça">FÍSICA</td>
+
+     	  	  <td class="tr-darknest" data-label="Quarta">FILOSOFIA</td>
+
+     	  	  <td data-label="Quinta">PORTUGUÊS</td>
+
+             <td class="tr-darknest" data-label="Sexta">QUÍMICA</td>
+
+     	  </tr>
+
+     	  <tr>
+
+          <td class="m-thead" data-label="Horas">7:50 as 8:40 </td>
+
+          <td class="tr-darknest" data-label="Segunda">HORARIO VAGO</td>
+
+          <td data-label="Terça">FÍSICA</td>
+
+          <td class="tr-darknest" data-label="Quarta">FILOSOFIA</td>
+
+          <td data-label="Quinta">PORTUGUÊS</td>
+
+          <td class="tr-darknest" data-label="Sexta">QUÍMICA</td>
+
+      </tr>
+
+      <tr>
+        <td class="m-thead" data-label="Horas"> 8:55 as 9:45 </td>
+
+        <td data-label="Segunda">PORTUGUÊS</td>
+
+        <td class="tr-darknest" data-label="Terça">MATEMÁTICA</td>
+
+        <td data-label="Quarta">EDUCAÇÃO FÍSICA</td>
+
+        <td class="tr-darknest" data-label="Quinta">SOCIOLOGIA</td>
+
+        <td data-label="Sexta">HISTÓRIA</td>
+
+
+    </tr>
+
+    <tr>
+      <td data-label="Horas"> 9:45 as 10:35 </td>
+
+      <td class="tr-darknest" data-label="Segunda">MATEMÁTICA</td>
+
+      <td class="tr-darknest" data-label="Terça">MATEMÁTICA</td>
+
+      <td data-label="Quarta">EDUCAÇÃO FÍSICA</td>
+
+      <td class="tr-darknest" data-label="Quinta">SOCIOLOGIA</td>
+
+      <td data-label="Sexta">HISTÓRIA</td>
+
+  </tr>
+
+  <tr>
+    <td data-label="Horas">10:35 as 11:25</td>
+
+    <td class="tr-darknest" data-label="Segunda">MATEMÁTICA</td>
+
+    <td data-label="Terça">LÍNGUA ESTRANGEIRA</td>
+
+    <td class="tr-darknest" data-label="Quarta">GEOGRAFIA</td>
+
+    <td data-label="Quinta">BIOLOGIA</td>
+
+    <td class="tr-darknest" data-label="Sexta">PORTUGUÊS</td>
+</tr>
+
+<tr>
+  <td data-label="Horas">11:25 as 12:15</td>
+
+  <td class="tr-darknest" data-label="Segunda">MATEMÁTICA</td>
+
+  <td data-label="Terça">LÍNGUA ESTRANGEIRA</td>
+
+  <td class="tr-darknest" data-label="Quarta">GEOGRAFIA</td>
+
+  <td data-label="Quinta">BIOLOGIA</td>
+
+  <td class="tr-darknest" data-label="Sexta">PORTUGUÊS</td>
+</tr>
+     </tbody>
+   </table>
+
+<!------------------------------------- hour's (end)--------------------------------------------->
+
+
+   <table class="tablee3">
+     <thead>
+     	<tr>
+     	 <th>Hora</th>
+     	 <th>Segunda</th>
+     	 <th>Terça</th>
+     	 <th>Quarta</th>
+     	 <th>Quinta</th>
+        <th>Sexta</th>
+       
+     	</tr>
+     </thead>
+     <tbody>
+     	  <tr>
+     	  	  <td class="m-thead" data-label="Segunda"> Aulas </td>
+
+     	  	  <td data-label="7:00 até 7:50">HORARIO VAGO</td>
+
+     	  	  <td data-label="7:50 as 8:40">HORARIO VAGO</td>
+
+     	  	  <td class="tr-darknest" data-label="8:55 as 9:45">PORTUGUÊS</td>
+
+     	  	  <td data-label="9:45 as 10:35">MATEMÁTICA</td>
+
+             <td data-label="10:35 as 11:25">MATEMÁTICA</td>
+             
+             <td data-label="11:25 as 12:15">MATEMÁTICA</td>
+
+     	  </tr>
+         <tr>
+          <td class="m-thead" data-label="Terça"> Aulas </td>
+
+          <td data-label="7:00 até 7:50">FÍSICA</td>
+
+          <td data-label="7:50 as 8:40">FÍSICA</td>
+
+          <td class="tr-darknest" data-label="8:55 as 9:45">MATEMÁTICA</td>
+
+          <td class="tr-darknest"data-label="9:45 as 10:35">MATEMÁTICA</td>
+
+          <td data-label="10:35 as 11:25">L. ESTRANGEIRA</td>
+          
+          <td data-label="11:25 as 12:15">L. ESTRANGEIRA</td>
+
+      </tr>
+      <tr>
+        <td class="m-thead" data-label="Quarta"> Aulas </td>
+
+        <td data-label="7:00 até 7:50">FILOSOFIA</td>
+
+        <td data-label="7:50 as 8:40">FILOSOFIA</td>
+
+        <td class="tr-darknest" data-label="8:55 as 9:45">ED.FÍSICA</td>
+
+        <td class="tr-darknest" data-label="9:45 as 10:35">ED.FÍSICA</td>
+
+        <td data-label="10:35 as 11:25">GEOGRAFIA</td>
+        
+        <td data-label="11:25 as 12:15">GEOGRAFIA</td>
+
+    </tr>
+    <tr>
+      <td class="m-thead" data-label="Quinta"> Aulas </td>
+
+      <td data-label="7:00 até 7:50">PORTUGUÊS</td>
+
+      <td data-label="7:50 as 8:40">PORTUGUÊS</td>
+
+      <td class="tr-darknest" data-label="8:55 as 9:45">SOCIOLOGIA</td>
+
+      <td class="tr-darknest" data-label="9:45 as 10:35">SOCIOLOGIA</td>
+
+      <td data-label="10:35 as 11:25">BIOLOGIA</td>
+      
+      <td data-label="11:25 as 12:15">BIOLOGIA</td>
+
+  </tr>
+
+  <tr>
+    <td class="m-thead" data-label="Sexta"> Aulas </td>
+
+    <td data-label="7:00 até 7:50">QUÍMICA</td>
+
+    <td data-label="7:50 as 8:40">QUÍMICA</td>
+
+    <td class="tr-darknest" data-label="8:55 as 9:45">HISTÓRIA</td>
+
+    <td class="tr-darknest" data-label="9:45 as 10:35">HISTÓRIA</td>
+
+    <td data-label="10:35 as 11:25">PORTUGUÊS</td>
+    
+    <td data-label="11:25 as 12:15">PORTUGUÊS</td>
+
+</tr>
+
+     	  
+     </tbody>
+   </table>
+</body>
+</html>

@@ -48,7 +48,7 @@
   
   body{
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(var(--body-color-dark));
+    background-color: black;
     margin: 0;
     color: var(--text-color);
   }
@@ -58,6 +58,9 @@
   }
   
   /*      REUSABLE END        */
+
+
+
 * {
   margin: 0;
   padding: 0;
