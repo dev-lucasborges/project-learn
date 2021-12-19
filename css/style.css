@@ -1,75 +1,6 @@
-/*      COLORS      */
-
-
-:root {
-  /* tomato */
-  --primary-color: 255,69,58; /*#ff453a*/
-
-  /* white */
-  --text-color: 255, 256, 256; 
-
-  /* gray-f*/
-  --secondary-color: 18,18,18;
-
-  /* gray-w*/
-  --body-color-dark: 28,28,30; /*#1c1c1e*/
-  --body-color-dark2: 44,44,46; /*#2c2c2e*/ 
-
-  /*green*/
-  --text-green-color: 48,309,88;
-  /*yellow*/
-  --text-yellow-color:255,214,10;
-  /*red*/
-  --text-red-color:255,69,58;
-}
-
-
-
-/*      REUSABLE CSS        */
-
-::-webkit-scrollbar{
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb{
-  background: rgb(var(--primary-color));
-  border-radius: 9px;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: rgb(var(--body-color-dark));
-  margin: 0;
-  color: white;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-
-a:visited{
-  color: white;
-}
-
-h1{
-  margin: 0;
-  padding: 0
-}
-
-.btn-primary-tomato{
- background-color: rgb(var(--primary-color));
- color: white;
-}
-
-.btn-primary-tomato:hover{
-  color: white;
-}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8fafb; }
 
 p {
   color: #b3b3b3;
@@ -102,14 +33,13 @@ h2 {
     .content .contents, .content .bg {
       width: 100%; } }
   .content .contents .form-group, .content .bg .form-group {
-    color: white;
     overflow: hidden;
     margin-bottom: 0;
     padding: 15px 15px;
     border-bottom: none;
     position: relative;
-    background: rgb(var(--body-color-dark2));
-    border-bottom: 1px solid #333333; }
+    background: #edf2f5;
+    border-bottom: 1px solid #e6edf1; }
     .content .contents .form-group label, .content .bg .form-group label {
       position: absolute;
       top: 50%;
@@ -120,7 +50,6 @@ h2 {
       -o-transition: .3s all ease;
       transition: .3s all ease; }
     .content .contents .form-group input, .content .bg .form-group input {
-      color: white;
       background: transparent; }
     .content .contents .form-group.first, .content .bg .form-group.first {
       border-top-left-radius: 7px;
