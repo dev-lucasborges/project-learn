@@ -24,7 +24,7 @@ session_start();
 			die;
 		}else
 		{
-			echo "Please enter some valid information!";
+			echo "Por favor, uma digite uma inforção válida!";
 		}
 	}
 ?>
@@ -88,7 +88,7 @@ session_start();
                 
               </div>
               
-              <div class="d-flex mb-5 align-items-center">
+              <div class="d-flex mb-2 align-items-center">
                 <span class="ml-auto"><a href="login-form.php" class="forgot-pass">Já tem uma conta ?</a></span> 
               </div>
 

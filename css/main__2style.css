@@ -1,0 +1,296 @@
+/*      COLORS      */
+:root {
+    /* tomato */
+    --primary-color: 255, 69, 58;
+    /*#ff453a*/
+    --hover-primary: 223, 45, 34;
+  
+    /* white */
+    --text-color: 255, 256, 256;
+  
+    /* gray-f*/
+    --secondary-color: 18, 18, 18;
+  
+    /* gray-w*/
+    --body-color-dark: 28, 28, 30;
+    /*#1c1c1e*/
+    --body-color-dark2: 44, 44, 46;
+    /*#2c2c2e*/
+  
+    /*green*/
+    --text-green-color: 48, 309, 88;
+    /*yellow*/
+    --text-yellow-color: 255, 214, 10;
+    /*red*/
+    --text-red-color: 255, 69, 58;
+  }
+  
+  
+  /*      REUSABLE CSS        */
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--body-color-dark2));
+    border-radius: 9px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(var(--body-color-dark));
+    margin: 0;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  a:visited {
+    color: white;
+  }
+  
+  
+  /*      REUSABLE END        */
+
+/*      NAVBAR      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.logo{
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+#header li {
+  border: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 3rem;
+}
+
+#header ul {
+  display: flex;
+}
+
+#header ul li {
+    align-itens: center;
+  list-style: none;
+  padding: 0px 15px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+#header li:hover {
+  background-color: var(--body-color-dark);
+}
+
+#header ul li a:hover {
+  border-bottom: 3px solid;
+  border-color: rgb(var(--primary-color));
+}
+
+#header ul li img {
+  margin-right: 30px;
+}
+
+.toggle {
+  display: none;
+}
+
+#nopdd{
+    padding: 0;
+}
+
+.btn-primary2{
+    padding: 5px 25px 5px 25px;
+    background-color: rgb(var(--primary-color));
+}
+
+@media (max-width: 749px) {
+  #header ul {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh- 80px);
+    padding: 20px;
+    overflow: auto;
+    background-color: #111;
+    flex-direction: column;
+    opacity: 0;
+
+  }
+
+  #header {
+    background-color: #111;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  #header li {
+    border: 0;
+  }
+
+  #header.active1 ul {
+    opacity: 1;
+    top: 75px;
+  }
+
+  #header ul li a {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .toggle {
+    z-index: 2;
+    color: var(--primary-color);
+    display: block;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    background-image: url(../assets/bars.svg);
+    cursor: pointer;
+  }
+
+  #header.active1 .toggle {
+    background-image: url(../assets/times.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+/*        NAVBAR END      */
+.sec{
+    height: 600px;
+}
+.frh1{
+    font-weight: 700;
+    max-width: 700px;
+}
+
+.main-img{
+    margin-top: -10em;
+    float: right;
+    width: 35rem;
+}
+
+.main-icon{
+    color: rgb(var(--primary-color));
+    font-size: 1.7rem;
+}
+
+.main-icon:hover{
+    color: rgb(var(--hover-primary));
+}
+
+.preview-img{
+    width: 20rem;
+    border-radius: 9px;
+    margin-top: 10px;
+}
+
+.sec2{
+    text-align: center;
+}
+
+.frh2{
+    max-width: none;
+    font-weight: 700;
+}
+
+.container-img{
+    height: 300px;
+
+    text-align: center;
+}
+
+.imgg{
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-5 {
+    margin: 3rem;
+  }
+
+.notes-p{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.bg-dark2{
+    background-color: rgb(var(--body-color-dark2));
+    border-radius: 9px;
+    padding: 9px;
+}
+
+.car{
+    display: none;
+}
+
+.padding-5 {
+    padding: 3rem;
+  }
+.frh3{
+    font-weight: 700;
+}
+
+@media (max-width: 905px){
+    .main-img{
+        margin-top: 3rem;
+    }
+
+    .margin-5{
+        margin: 0;
+    }
+
+    .car{
+        display: block;
+    }
+
+    .container-img{
+        display: none;
+    }
+
+    .padding-5 {
+        padding: 2rem !important;
+      }
+
+    .frh3{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .margin-5{
+        margin: 1rem;
+    }
+}

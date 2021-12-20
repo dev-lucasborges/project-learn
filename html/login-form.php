@@ -79,8 +79,8 @@ session_start();
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-              <h3>Registre-se</h3>
-              <p class="mb-4">Da próxima vez faça login com apenas um clique!</p>
+              <h3>Entre</h3>
+              <p class="mb-4">Só com um clique! Eu disse que seria fácil :)</p>
             </div>
             <form method="post">
 			 <div class="form-group first mb-1">
@@ -88,17 +88,17 @@ session_start();
                 <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email">
                 
               </div>
-			  <div class="form-group  mb-1">
+			  <div class="form-group last mb-1">
                 
                 <input type="password" class="form-control" id="user_email" name="password" placeholder="Senha">
                 
               </div>
               
-              <div class="d-flex mb-5 align-items-center">
+              <div class="d-flex mb-2 align-items-center">
                 <span class="ml-auto"><a href="register-form.php" class="forgot-pass">Ainda não tem uma conta ?</a></span> 
               </div>
 
-              <input type="submit" value="Registrar" class="btn btn-block btn-primary-tomato">
+              <input type="submit" value="Entrar" class="btn btn-block btn-primary-tomato">
 
               </div>
             </form>
