@@ -1,0 +1,36 @@
+/*      COLORS      */
+:root {
+  /* tomato */
+  --primary-color: 255, 69, 58;
+  /*#ff453a*/
+  --hover-primary: 223, 45, 34;
+
+  /* white */
+  --text-color: 255, 256, 256;
+
+  /* gray-f*/
+  --secondary-color: 18, 18, 18;
+
+  /* gray-w*/
+  --body-color-dark: 28, 28, 30;
+  /*#1c1c1e*/
+  --body-color-dark2: 44, 44, 46;
+  /*#2c2c2e*/
+
+  /*green*/
+  --text-green-color: 48, 309, 88;
+  /*yellow*/
+  --text-yellow-color: 255, 214, 10;
+  /*red*/
+  --text-red-color: 255, 69, 58;
+}
+
+.frh1{
+  font-weight: 700;
+}
+
+@media (max-width: 952px){
+  .imggg{
+    display: none;
+  }
+}

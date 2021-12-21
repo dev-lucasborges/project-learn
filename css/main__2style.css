@@ -191,7 +191,7 @@ body {
 }
 .frh1{
     font-weight: 700;
-    max-width: 700px;
+    font-size: calc(1.775rem + 1.5vw);
 }
 
 .main-img{
@@ -202,7 +202,7 @@ body {
 
 .main-icon{
     color: rgb(var(--primary-color));
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .main-icon:hover{
@@ -262,6 +262,37 @@ body {
   }
 .frh3{
     font-weight: 700;
+}
+
+.subtext{
+  font-weight: 700;
+  color: rgb(var(--primary-color));
+}
+
+input{
+  padding: 20px;
+  border-radius: 9px;
+  border: 0;
+  background-color: rgb(var(--body-color-dark2));
+}
+
+.gobtn:focus{
+  border: 0;
+}
+
+.login-form{
+  width: 40vh;
+  font-size: .9rem;
+}
+
+.notifi{
+  background-color: rgb(var(--primary-color));
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.login-img{
+  width: 110vh;
 }
 
 @media (max-width: 905px){
