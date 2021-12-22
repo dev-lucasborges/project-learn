@@ -10,3 +10,4 @@ if(!$conexao = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
 
 	die("failed to connect!");
 }
+

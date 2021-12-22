@@ -25,12 +25,20 @@
   --text-red-color: 255, 69, 58;
 }
 
-.frh1{
-  font-weight: 700;
+
+.icons-title{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+i{
+  font-size: 30px;
+  margin-right: 2rem;
+  margin-top: .5rem;
+  transition: 1s ease-in-out;
 }
 
-@media (max-width: 952px){
-  .imggg{
-    display: none;
-  }
+i:hover{
+  color: rgb(var(--primary-color));
+  transition: 0.2s ease-in-out;
+  cursor:pointer;
 }
