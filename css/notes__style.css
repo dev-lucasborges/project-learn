@@ -247,19 +247,25 @@ body{
 }
 
 #total{
-    background-color: #0e152c;
+    background-color: royalblue;
 }
 
 .acima{
+    font-size: 14px;
     color: rgb(var(--text-green-color));
+    margin-right: 10px;
 }
 
 .medio{
     color:rgb(var(--text-yellow-color));
+    margin-right: 10px;
+    font-size: 14px;
 }
 
 .ruim{
     color: rgb(var(--text-red-color));
+    margin-right: 10px;
+    font-size: 14px;
 }
 
 .disable{
@@ -271,9 +277,9 @@ body{
 }
 
 .description{
-    display: flex;
-    font-size: 15px;
-    font-weight: 400;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: lighter;
     margin-bottom: 5rem;
 }
 
@@ -512,14 +518,20 @@ body{
 
 .acima{
     color: rgb(65, 211, 128);
+    padding: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .medio{
     color: #ffc107;
+    padding: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .ruim{
     color: red;
+    padding: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .disable{
@@ -589,6 +601,27 @@ body{
 
     .description{
         display: block;
+    }
+
+    .acima{
+        border-radius: 9px;
+        background-color: rgb(var(--body-color-dark2));
+    }
+
+    .medio{
+        border-radius: 9px;
+        background-color: rgb(var(--body-color-dark2));
+    }
+
+    .ruim{
+        border-radius: 9px;
+        background-color: rgb(var(--body-color-dark2));
+    }
+
+    .nulo{
+        margin-bottom: 0.3rem;
+        border-radius: 9px;
+        background-color: royalblue;
     }
 
 }
