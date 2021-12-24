@@ -7747,6 +7747,7 @@ textarea.form-control-lg {
 .text-danger {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+  text-decoration:underline;
 }
 
 .text-light {
@@ -11289,5 +11290,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.nav-item:hover{
+  background-color: rgb(var(--body-color-dark2));
+  border-radius: 9px;
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.bg-blur{
+  backdrop-filter: saturate(90%) blur(1px);
+  border-radius: 9px;
+}
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */

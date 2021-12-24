@@ -85,16 +85,16 @@ li:hover {
 
 .search__bar {
   text-align: center;
-  font-size: 1.3rem;
   border-radius: 9px;
   border: 0;
   background-color: rgb(var(--secondary-color));
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: white;
   margin-top: 1rem;
 }
+
+
 
 .search__bar:focus {
   border: 0;
@@ -124,8 +124,7 @@ li:hover {
 .sec__title {
   background-color: rgb(var(--secondary-color));
   padding: 12px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+
 }
 
 @media only screen and (max-width: 613px) {
@@ -160,111 +159,13 @@ body {
     text-transform: lowercase;
 }
 
-#header li {
-  border: 0;
-}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin-left: 3rem;
-}
-
-#header ul {
-  display: flex;
-}
-
-#header ul li {
-    align-itens: center;
-  list-style: none;
-  padding: 0px 15px;
-}
-
-#header ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-  font-weight: 400;
-}
-
-#header li:hover {
-  background-color: var(--body-color-dark);
-}
-
-#header ul li a:hover {
-  border-bottom: 3px solid;
-  border-color: rgb(var(--primary-color));
-}
-
-#header ul li img {
-  margin-right: 30px;
-}
-
-.toggle {
-  display: none;
-}
-
-#nopdd{
-    padding: 0;
-}
-
-.btn-primary2{
-    padding: 5px 25px 5px 25px;
-    background-color: rgb(var(--primary-color));
-}
-
-@media (max-width: 749px) {
-  #header ul {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: calc(100vh- 80px);
-    padding: 20px;
-    overflow: auto;
-    background-color: #111;
-    flex-direction: column;
-    opacity: 0;
-
-  }
-
-  #header {
-    background-color: #111;
-    margin-bottom: 2rem;
-    margin-left: 0;
-  }
-
-  #header li {
-    border: 0;
-  }
-
-  #header.active1 ul {
-    opacity: 1;
-    top: 75px;
-  }
-
-  #header ul li a {
-    margin: 5px 0;
-    font-size: 24px;
-    color: #fff;
-  }
-
-  .toggle {
-    z-index: 2;
-    color: var(--primary-color);
-    display: block;
-    position: relative;
-    width: 38px;
-    height: 38px;
-    background-image: url(../assets/bars.svg);
-    cursor: pointer;
-  }
-
-  #header.active1 .toggle {
-    background-image: url(../assets/times.svg);
-    background-repeat: no-repeat;
-  }
-}
-
 /*        NAVBAR END      */
+
+.info-bg{
+  background-color: rgb(var(--body-color-dark2));
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 9px;
+  margin-left: 1rem;
+}
