@@ -16,6 +16,7 @@
     /*#1c1c1e*/
     --body-color-dark2: 44, 44, 46;
     /*#2c2c2e*/
+    --body-color-dark3: 58,58, 60;
   
     /*green*/
     --text-green-color: 48, 309, 88;
@@ -143,7 +144,14 @@ body {
 .bg-dark2{
     background-color: rgb(var(--body-color-dark2));
     border-radius: 9px;
-    padding: 9px;
+    padding: 0px;
+    border: solid 1px;
+    border-color: rgb(var(--body-color-dark3));
+}
+
+.bg-dark2:hover{
+  background-color: rgb(var(--body-color-dark3));
+  transition: 0.6s;
 }
 
 .car{
@@ -190,13 +198,32 @@ input{
 .img-res{
   border-radius: 9px;
       border: solid 1px;
-      border-color: rgb(var(--primary-color));
+      border-color: rgb(var(--body-color-dark3));
 }
 .img-res2{
   display: none;
 }
 
+.text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #f12424, #ff453a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.img-login{
+  width: 35%;
+}
+
 @media (max-width: 905px){
+  .img-login{
+    width: 70%;
+  }
+  
     .main-img{
         margin-top: 3rem;
     }
@@ -235,6 +262,6 @@ input{
       display: initial;
       border-radius: 9px;
       border: solid 1px;
-      border-color: rgb(var(--primary-color));
+      border-color: rgb(var(--body-color-dark3));
     }
 }
