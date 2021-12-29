@@ -125,7 +125,7 @@ body {
 }
 
 .imgg{
-    border-radius: 9px;
+    border-radius: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -196,7 +196,7 @@ input{
   width: 110vh;
 }
 .img-res{
-  border-radius: 9px;
+  border-radius: 18px;
       border: solid 1px;
       border-color: rgb(var(--body-color-dark3));
 }
@@ -260,7 +260,7 @@ input{
 
     .img-res2{
       display: initial;
-      border-radius: 9px;
+      border-radius: 18px;
       border: solid 1px;
       border-color: rgb(var(--body-color-dark3));
     }
