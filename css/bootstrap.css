@@ -3980,10 +3980,10 @@ textarea.form-control-lg {
 .nav-item{
   border: 0;
   padding: 0;
+  transition: 0.2s ease-in;
 }
 
 .nav-item:hover{
-  background-color: initial;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -11292,17 +11292,29 @@ textarea.form-control-lg {
 }
 
 .nav-item:hover{
-  background-color: rgb(var(--body-color-dark2));
+  background-color: var(--bs-primary);
   border-radius: 9px;
-  color: white;
+  color: var(--text-color);
   transition: 0.2s ease-in;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .bg-blur{
-  backdrop-filter: saturate(90%) blur(1px);
-  border-radius: 9px;
+  backdrop-filter: saturate(90%) blur(3px);
+  padding: 9px;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: var(--bs-gray-dark) solid 1px;
 }
 
-
+header{
+  padding: 9px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background 250ms ease-in;
+}
 
 /*# sourceMappingURL=bootstrap.css.map */

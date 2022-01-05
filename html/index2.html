@@ -19,38 +19,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!------------------------------------- links end's-------------------------------->
 </head>
-
-<nav class="mx-3 sticky-top my-1 navbar navbar-expand-lg navbar-dark bg-blur">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="#">Learn</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="./library.html">Biblioteca</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active "  href="./html/index2.html">Ver notas</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        
-        <a class="btn btn-primary">Sobre</a>
-      </form>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">Learn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./library.html">Biblioteca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./html/index2.html">Ver notas</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          
+          <a class="btn btn-primary" href="./login-form.html">Login</a>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 
 <body>
 <div class="info">
   <h2 class="title">  NOTAS</h2>
-  <p class="sub__title">SUAS NOTAS SÃO RESPONSABILIDADE DE SEUS PROFESSORES</p>
+  <p class="sub__title home-intro">SUAS NOTAS SÃO RESPONSABILIDADE DE SEUS PROFESSORES</p>
 </div>
 <div class="table-responsive">
    <table class="tablee">
@@ -207,7 +208,7 @@
 <div class=" text-center container-fluid">
   <div class="acima d-inline-flex">Suas notas estão dentro ou acima da média necessária para aprovação :)</div>
   <div class="medio d-inline-flex">Se esforce só mais um pouco! suas notas ainda não são o suficiente para aprovação</div>
-  <div class="ruim d-inline-flex">Poxa suas notas estão abaixo da média</div>
+  <div class="ruim d-inline-flex">Poxa, suas notas estão abaixo da média</div>
 </div>
 <!------------------------------------- notes end ---------------------------------------->
 
@@ -423,5 +424,6 @@
      	  
      </tbody>
    </table>
+<script src="../js/app.js"></script>
 </body>
 </html>

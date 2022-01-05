@@ -79,8 +79,17 @@ body {
     text-transform: lowercase;
 }
 
-
+header{
+  padding: 9px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background 250ms ease-in;
+}
 /*        NAVBAR END      */
+
 .sec{
     height: 600px;
 }

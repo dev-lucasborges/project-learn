@@ -40,3 +40,28 @@ document.addEventListener('DOMContentLoaded',function(event){
   // start the text animation
   StartTextAnimation(0);
 });
+
+
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
+
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("bg-blur");
+      console.log(entries);
+    } else {
+      header.classList.remove("bg-blur");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
