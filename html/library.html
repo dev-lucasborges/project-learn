@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <!------------------------------------- links end's-------------------------------->
 </head>
 <body>
@@ -47,230 +48,253 @@
 		</div>
 	  </div>
 	</nav>
+
   </header>
 
 
 <!------------------------------------- navbar end------------------------------------>
 
 <!------------------------------------- shortcuts ------------------------------------>
-<div class="allcontent">
-<a href="#todos"class="btnn btn btn-glow btn-primary">Todos livros</a>
 
-<a href="#contos-infantis"class="btnn btn btn-glow btn-primary">Contos Infantis</a>
-
-<a href="#dicionarios"class="btnn btn btn-glow btn-primary">Dicionários</a>
-
-<a href="#enciclopedias"class="btnn btn btn-glow btn-primary">Enciclopédias</a>
+<div class="allcontent mx-auto">
+	
 
 
-
+	
 <!------------------------------------- shortcuts end ------------------------------------>
 
-<div class="mt-3 text-center container-fluid home-intro">
-	<div class="mb-2 info-bg d-inline-flex">Título</div>
-	<div class="mb-2 info-bg text-warning d-inline-flex">Autor</div>
-	<div class="mb-2 info-bg text-primary d-inline-flex">Ano de produção</div>
-	<div class="mb-2 info-bg text-success d-inline-flex">Editora</div>
-	<div class="mb-2 info-bg text-danger d-inline-flex">Edição</div>
-	<div class="mb-2 info-bg text-info d-inline-flex">Volume</div>
-	<div class="mb-2 info-bg text-secondary d-inline-flex">Onde achar na biblioteca</div>
-  </div>
-
-  <section class="container">
-    <input id="search" class="form-control-sm mb-3 w-75 search__bar" search="all" placeholder="Pesquisar">
-</section>
+			<div class="mt-3 text-center container-fluid">
+				<div class="mb-2 info-bg d-inline-flex">Título</div>
+				<div class="mb-2 info-bg text-warning d-inline-flex">Autor</div>
+				<div class="mb-2 info-bg text-primary d-inline-flex">Ano de produção</div>
+				<div class="mb-2 info-bg text-success d-inline-flex">Editora</div>
+				<div class="mb-2 info-bg text-danger d-inline-flex">Edição</div>
+				<div class="mb-2 info-bg text-info d-inline-flex">Volume</div>
+				<div class="mb-2 info-bg text-secondary d-inline-flex">Onde achar na biblioteca</div>
+			</div>
 
 <!------------------------------------- all books ------------------------------------>
-<section id="todos" class="sec__title">TODOS LIVROS <span class="text-secondary"> A - Z</span></section>
-<ul id="all">	
-	<li nome="A Segunda Guerra Mundial 1988 Codex S.A.">A Segunda Guerra Mundial <span class="text-primary">1988</span> <span class="text-success">Codex  S.A. </span><span class="text-info">1, 3 e 6</span></li>
-	<li nome="A Cidadela - O romance de um médico 1966 	José Oympo">A Cidadela - O romance de um médico <span class="text-primary">1966</span> <span class="text-success">José Olympo</span></li>
-	<li nome="A Criança a Adolescência e a Vida (Psicologi da Criança) Maurice Debesse Linográfica Editora LTDA.">A Criança a Adolescência e a Vida (Psicologia da Criança)		<span class="text-warning">Maurice Debesse</span>		<span class="text-success">Linográfica Editora LTDA.</span></li>
+<div class="select-area mt-3">
+	<p class="text-muted">Selecione a categoria do livro clicando no botão abaixo</p>
+<select class="div-toggle btn btn-primary" data-target=".my-info-1">
+	<option value="all" data-show=".all">Todos Livros</option>
+	<option value="contos-infantis" data-show=".citrus">Contos Infantis</option>
+	<option value="dicionario" data-show=".pome">Dicionário</option>
+	<option value="enciclopedia" data-show=".enciclopedia">Enciclopédia</option>
+  </select>
+</div>
 
-	<li nome="A Criança a Adolescência e a Vida(Nossas crianças na Escola) Robert Dottrens Linográfica Editora LTDA.">A Criança a Adolescência e a Vida(Nossas crianças na Escola)		<span class="text-warning">Robert Dottrens</span>		<span class="text-success">Linográfica Editora LTDA.</span>	</li>
-	
-	<li nome="A criança, a adolecência e a vida ">A criança, a Adolecência e a Vida <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">10</span></li>
-	
-	<li nome="A Educação Funcional L'Education Fonctionnelle 1954 Companhia Editora Nacional 4">A Educação Funcional	L'Education Fonctionnelle <span class="text-primary">1954</span> 	<span class="text-success">Companhia Editora Nacional</span>	<span class="text-info">4</span></li>
-	
-	<li nome="A Era Dos Reis O Dr. Charles Biltzer Time Inc.">A Era Dos Reis <span class="text-warning"> O Dr. Charles Biltzer</span> <span class="text-primary">1971</span>	<span class="text-success">Time Inc.</span></li>
-	
-	<li nome="A Psicologia Aplicada DR. René Binois	? Difusão Europeia do Livro">A Psicologia Aplicada <span class="text-warning"> DR. René Binois</span> <span class="text-success">Difusão Europeia do Livro</span></li>
-	
-	<li nome="A Reforma Edith Simon 1970/1971 Time Inc.">A Reforma Edith Simon <span class="text-primary">1970/1971</span> <span class="text-success">Time Inc.</span> </li>
-	
-	<li nome="A Vida do Bebê Bloch Editores S.A. 32ª edição">A Vida do Bebê <span class="text-success">Bloch Editores S.A.</span> <span class="text-info">32</span></li>
-	
-	<li nome="A África de Hoje Ellen e Attilo Gatti 1974 Edições melhoramentos	">A África de Hoje <span class="text-warning">Ellen e Attilo Gatti</span> <span class="text-primary">1974</span> <span class="text-success">Edições melhoramentos</span></li>
-	
-	<li nome="A ópera Kurt Pahlen 1974 Boa leitura Editôra S.A.">A ópera <span class="text-warning">Kurt Pahlen</span> <span class="text-primary">1974</span> <span class="text-success">Boa leitura Editôra S.A.</span></li>
-	
-	<li nome="Adolescência e a Vida(Recursos Audiovisuais em Educação) João Ribas da Costa Linográfica Editora LTDA.">Adolescência e a Vida(Recursos Audiovisuais em Educação)		<span class="text-warning">João Ribas da Costa </span><span class="text-success">Linográfica Editora LTDA.</span></li>
-	
-	<li nome="Almas em Conflito - Romance A. J. Cronin 1966 José Olympo 10">Almas em Conflito - Romance <span class="text-warning">A. J. Cronin </span> <span class="text-primary">1966</span> <span class="text-success">José Olympo </span><span class="text-info">10</span></li>
-	
-	<li nome="Anos de Ternura - Romance A. J. Cronin 1966 José Olympo 14">Almas em Conflito - Romance <span class="text-warning">Anos de Ternura </span> <span class="text-primary">1966</span> <span class="text-success">José Olympo </span><span class="text-info">14</span></li>
-	
-	<li nome="Antigo Islã Desmond Stewart 1973 Time Inc.">Antigo Islã <span class="text-warning">Desmond Stewart</span> <span class="text-primary">1973</span> 	<span class="text-success">Time Inc.</span></li>
-	
-	<li nome="Antologia da Leitura Mundial 1958	LOGOS Ltda.">Antologia da Leitura Mundial <span class="text-primary">1958</span> <span class="text-success">LOGOS LTDA.</span> </li>
-	
-	<li nome="Anuário Delta Larouse 1972 a 1982	Delta S.A">Anuário Delta Larouse <span class="text-primary">1972 a 1982</span> <span class="text-success">Delta S.A</span></li>
-	
-	<li nome="Artesanato Lisa -ivros Irradiantes S. A.	">Artesanato <span class="text-success"> Lisa Livros Irradiantes S. A.</span></li>
-	
-	<li nome="As Chaves do Reino A. J. Cronin 1966 José Olympio Editôra S. A. 15 edição">As Chaves do Reino <span class="text-warning">A. J. Cronin </span> <span class="text-primary">1966</span>	<span class="text-success">José Olympio Editôra S. A.</span> <span class="text-info">15</span></li>
-	
-	<!---------------------------------------- Letra B ---------------------------------------->
+		  <div class="my-info-1">
+			<div class="all">
+				<section id="todos" class="sec__title home-intro"> <span class="text-start">TODOS LIVROS  </span><span class="text-secondary"> A - Z</span></section>
+					<section class="container">
+						<input id="search" class="form-control-sm mb-3 w-75 search__bar" search="all" placeholder="Pesquisar">
+					</section>
+				</section>
+				<ul id="all">	
+					
+				<li nome="A Segunda Guerra Mundial 1988 Codex S.A.">A Segunda Guerra Mundial <span class="text-primary">1988</span> <span class="text-success">Codex  S.A. </span><span class="text-info">1, 3 e 6</span></li>
 
-	<li nome="Biblioteca da Língua Portuguesa 1967	Lisa - Livr	4">Biblioteca da Língua Portuguesa <span class="text-primary">1967</span> <span class="text-success">Lisa Livros Irradiantes S. A.</span><span class="text-info"> 1 ao 6</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (Análise do Balanço) Rogério Pfaltzgraff Récord Editôra">Biblioteca de Contabilidade (Análise do Balanço) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Récord Editôra</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (Aspectos Científicos da Contabilidade) Rogério Pfaltzgraff Récord Editôra 5ª Edição">Biblioteca de Contabilidade (Aspectos Científicos da Contabilidade) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success"> Récord Editôra</span> <span class="text-info">5</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (O Balanço das Sociedades Anônimas) Rogério Pfaltzgraff Editôra Minerva">Biblioteca de Contabilidade (O Balanço das Sociedades Anônimas) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (Pesquisa Contáveis) Rogério Pfaltzgraff 1959 Editôra Minerva">Biblioteca de Contabilidade (Pesquisa Contáveis) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-primary">1959</span> <span class="text-success">Editôra Minerva</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (Seleções de Contabilidade) Rogério Pfaltzgraff Editôra Minerva">Biblioteca de Contabilidade (Seleções de Contabilidade) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span></li>
-	
-	<li nome="Biblioteca de Contabilidade (Sociedades por Ações) Rogério Pfaltzgraff Récord Editôra	3ª Edição">Biblioteca de Contabilidade (Sociedades por Ações)<span class="text-warning"> Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span><span class="text-info"> 3</span></li>
-	
-	<li nome="Biblioteca de Contabilidade e Prática de Comércio 1971 Novo Brasil Santa Helena Editora Ltda.">Biblioteca de Contabilidade e Prática de Comércio <span class="text-primary">1971</span> <span class="text-success">Novo Brasil</span> <span class="text-danger"> Santa Helena Editora Ltda.</span></li>
-	
-	<li nome="Biblioteca do Contador Eryma Caneiro Editora de Livro S.A.">Biblioteca do Contador <span class="text-warning">Eryma Caneiro</span> <span class="text-success">Editora de Livro S.A.</span></li>
-	
-	<li nome="Bizâncio Philip Sherrard 1966/1970 Time Inc.">Bizâncio <span class="text-warning"> Philip Sherrard</span> <span class="text-primary">1966/1970</span> <span class="text-success">Time Inc.</span></li>
-	
-	<li nome="Brasil - O livro dos 500 1990 anos Caras S.A.">Brasil - O Livro dos 500 anos <span class="text-primary">1990</span> <span class="text-success">Caras S.A.</span></li>
-	
-	<li nome="Brasil Histórias,costumes e lendas Editora Três Ltda.">Brasil Histórias,costumes e lendas <span class="text-success">Editora Três Ltda.</span></li>
-	
-	<!---------------------------------------- Letra C ---------------------------------------->
+				<li nome="A Cidadela - O romance de um médico 1966 	José Oympo">A Cidadela - O romance de um médico <span class="text-primary">1966</span> <span class="text-success">José Olympo</span></li>
 
-	<li nome="China Antiga Edward H.Schafer 1973 Time Inc.">China Antiga <span class="text-warning">Edward H. Schafer</span>  <span class="text-primary">1973</span> <span class="text-success">Time Inc.</span></li>
-	
-	<li nome="Clássicos para a Juventude 1965 Matos Peixoto S.A. 1">Clássicos para a Juventude <span class="text-primary">1965</span> <span class="text-success">Matos Peixoto S.A.</span> <span class="text-info">1</span></li>
-	
-	<li nome="Coleção Ciência Para Todos (Atmosfera 2) 1966	Fulgor Limitada	3">Coleção Ciência Para Todos (Atmosfera 2) <span class="text-primary">1966</span> <span class="text-success">Fulgor Limitada</span> <span class="text-info">3</span></li>
-	
-	<li nome="Coleção Clássicos Jackson 1965 Gráfica Editora LTDA.">Coleção Clássicos Jackson <span class="text-primary">1965</span> <span class="text-success">Gráfica Editora LTDA.</span></li>
-	
-	<li nome="Coleção de José de Alencar José de Alencar ">Coleção de José de Alencar <span class="text-warning">José de Alencar</span></li>
-	
-	<li nome="Coleção de Machado de Assis 1965	Cultrix	3">Coleção de Machado de Assis <span class="text-primary">1965</span> <span class="text-success">Cultrix</span><span class="text-info"> 3</span></li>
-	
-	<li nome="Coleção Pearl Buck 1961 Edições Melhoramentos 2">Coleção Pearl Buck <span class="text-primary">1961</span> <span class="text-success">Edições Melhoramentos</span><span class="text-info"> 1 ao 8</span></li>
-	
-	<li nome="Coleção Rio 4 Séculos 1965 José Olympo">Coleção Rio 4 Séculos <span class="text-primary">1965</span> <span class="text-warning">José Olympo</span><span class="text-info"> 1 ao 6</span></li>
-	
-	<li nome="Coleção Romance Real 1958	Prometeu">Coleção Romance Real <span class="text-primary">1958</span> <span class="text-warning">Prometeu</span> <span class="text-info"> 1 ao 9</span></li>
-	
-	<li nome="Como Funciona enciclopédia de Ciência e Técnica 1975 a 1979 Marshall Cavendish Ltda.2º edição">Como Funciona enciclopédia de Ciência e Técnica <span class="text-primary">1975 a 1979</span> <span class="text-success">Marshall Cavendish Ltda.</span>	<span class="text-info">2</span></li>
-	
-	<li nome="Conhecer Dicionário Enciclopédico 1970 e 1972	Abril Cultural">Conhecer Dicionário Enciclopédico <span class="text-primary"> 1970 e 1972</span> <span class="text-success">Abril Cultural</span> </li>
-	
-	<li nome="Consolidação das leis do trabalho (CLT) 1986	LTR Editora LTDA. 19">Consolidação das leis do trabalho (CLT) <span class="text-primary">1986</span> <span class="text-success">LTR Editora LTDA.</span> <span class="text-info">19</span> </li>
-	
-	<li nome="Contabilidade Comercial e Contabilidade Comercial Das Sociedades 1978	Editora Brasiliense	6.ª Edição">Contabilidade Comercial e Contabilidade Comercial Das Sociedades <span class="text-primary">1978</span> <span class="text-success">Editora Brasiliense</span> <span class="text-info">6</span></li>
-	
-	<li nome="Contos Sem Data 1956 Civilização Brasileira Rio de Janeiro 1 ao 12">Contos Sem Data <span class="text-primary">1956</span> <span class="text-success">Civilização Brasileira </span> <span class="text-info">1 ao 12</span> </li>
-	
-	<li nome="Convite à Psicologia Prática Mário Ferreira dos Santos 1965 LOGOS LTDA. 5">Convite à Psicologia Prática <span class="text-primary">1965</span> <span class="text-warning">Mário Ferreira dos Santos</span> <span class="text-success">LOGOS LTDA.</span> <span class="text-danger">5</span> </li>
-	
-	<li nome="Corpo Humano - A Máquina da Vida LITERATURA INFANTIL - 028.5 2006 DCL - Difusão Cultural do Livro LTDA. 1"> Corpo Humano - A Máquina da Vida <span class="text-primary">2006</span> <span class="text-success">DCL - Difusão Cultural do Livro LTDA.</span> <span class="text-danger">1</span> </li>
-	
-	<li nome="Criando Nossos Filhos 2000 Klick editora 8 a 11"> Criando Nossos Filhos <span class="text-primary">2000</span> <span class="text-success">Klick editora</span> <span class="text-info">8 a 11</span></li>
-	
-	<li nome="Criança a Adolescência e a Vida(Higiene Mental das Crianças e Adolescentes) DEP. de Instrução Pública de Genebra ENSINAR - DAR AULAS - 371.102 Linográfica Editora LTDA.	7"> Criança a Adolescência e a Vida(Higiene Mental das Crianças e Adolescentes) <span class="text-warning">DEP. de Instrução Pública de Genebra</span> <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">7</span></li>
-	
-	<li nome="Criança a Adolescência e a Vida(Timidez e Adolescencia) Jean Lacroix Linográfica Editora LTDA. 6"> Criança a Adolescência e a Vida(Timidez e Adolescencia) <span class="text-warning">Jean Lacroix</span> <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">6</span></li>
-	
-	<li nome="Crianças Difíceis Ofélia Boisson Cardoso 1967	Editora Gráfica Santana Ltda. 2 1 ao 2"> Crianças Difíceis <span class="text-warning">Ofélia Boisson Cardoso</span> <span class="text-primary">1967</span>	<span class="text-success">Editora Gráfica Santana Ltda.</span> <span class="text-danger">2</span> <span class="text-info">1 ao 2 </span> </li>
-	
-	<li nome="Curso de Instrução Programada George R. Terry	1993 Editora Brasileirense 5 1 e 4"> Curso de Instrução Programada <span class="text-warning">George R. Terry</span> <span class="text-primary">1993</span> <span class="text-success">Editora Brasileirense</span> <span class="text-danger">5</span> <span class="text-info">1 e 4</span> </li>
-	
-	<li nome="Código de Processo Civil 1985 Saraiva 15"> Código de Processo Civil </span> <span class="text-primary">1985</span> <span class="text-success">Saraiva</span> <span class="text-danger">15</span></li>
-	
-	<li nome="Código Penal e Legislação Complementar 1986 Forense 8"> Código Penal e Legislação Complementar <span class="text-primary">1986</span> <span class="text-success">Forense</span> <span class="text-danger">8</span> </li>
+				<li nome="A Criança a Adolescência e a Vida (Psicologi da Criança) Maurice Debesse Linográfica Editora LTDA.">A Criança a Adolescência e a Vida (Psicologia da Criança)		<span class="text-warning">Maurice Debesse</span>		<span class="text-success">Linográfica Editora LTDA.</span></li>
+			
+				<li nome="A Criança a Adolescência e a Vida(Nossas crianças na Escola) Robert Dottrens Linográfica Editora LTDA.">A Criança a Adolescência e a Vida(Nossas crianças na Escola)		<span class="text-warning">Robert Dottrens</span>		<span class="text-success">Linográfica Editora LTDA.</span>	</li>
+				
+				<li nome="A criança, a adolecência e a vida ">A criança, a Adolecência e a Vida <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">10</span></li>
+				
+				<li nome="A Educação Funcional L'Education Fonctionnelle 1954 Companhia Editora Nacional 4">A Educação Funcional	L'Education Fonctionnelle <span class="text-primary">1954</span> 	<span class="text-success">Companhia Editora Nacional</span>	<span class="text-info">4</span></li>
+				
+				<li nome="A Era Dos Reis O Dr. Charles Biltzer Time Inc.">A Era Dos Reis <span class="text-warning"> O Dr. Charles Biltzer</span> <span class="text-primary">1971</span>	<span class="text-success">Time Inc.</span></li>
+				
+				<li nome="A Psicologia Aplicada DR. René Binois	? Difusão Europeia do Livro">A Psicologia Aplicada <span class="text-warning"> DR. René Binois</span> <span class="text-success">Difusão Europeia do Livro</span></li>
+				
+				<li nome="A Reforma Edith Simon 1970/1971 Time Inc.">A Reforma Edith Simon <span class="text-primary">1970/1971</span> <span class="text-success">Time Inc.</span> </li>
+				
+				<li nome="A Vida do Bebê Bloch Editores S.A. 32ª edição">A Vida do Bebê <span class="text-success">Bloch Editores S.A.</span> <span class="text-info">32</span></li>
+				
+				<li nome="A África de Hoje Ellen e Attilo Gatti 1974 Edições melhoramentos	">A África de Hoje <span class="text-warning">Ellen e Attilo Gatti</span> <span class="text-primary">1974</span> <span class="text-success">Edições melhoramentos</span></li>
+				
+				<li nome="A ópera Kurt Pahlen 1974 Boa leitura Editôra S.A.">A ópera <span class="text-warning">Kurt Pahlen</span> <span class="text-primary">1974</span> <span class="text-success">Boa leitura Editôra S.A.</span></li>
+				
+				<li nome="Adolescência e a Vida(Recursos Audiovisuais em Educação) João Ribas da Costa Linográfica Editora LTDA.">Adolescência e a Vida(Recursos Audiovisuais em Educação)		<span class="text-warning">João Ribas da Costa </span><span class="text-success">Linográfica Editora LTDA.</span></li>
+				
+				<li nome="Almas em Conflito - Romance A. J. Cronin 1966 José Olympo 10">Almas em Conflito - Romance <span class="text-warning">A. J. Cronin </span> <span class="text-primary">1966</span> <span class="text-success">José Olympo </span><span class="text-info">10</span></li>
+				
+				<li nome="Anos de Ternura - Romance A. J. Cronin 1966 José Olympo 14">Almas em Conflito - Romance <span class="text-warning">Anos de Ternura </span> <span class="text-primary">1966</span> <span class="text-success">José Olympo </span><span class="text-info">14</span></li>
+				
+				<li nome="Antigo Islã Desmond Stewart 1973 Time Inc.">Antigo Islã <span class="text-warning">Desmond Stewart</span> <span class="text-primary">1973</span> 	<span class="text-success">Time Inc.</span></li>
+				
+				<li nome="Antologia da Leitura Mundial 1958	LOGOS Ltda.">Antologia da Leitura Mundial <span class="text-primary">1958</span> <span class="text-success">LOGOS LTDA.</span> </li>
+				
+				<li nome="Anuário Delta Larouse 1972 a 1982	Delta S.A">Anuário Delta Larouse <span class="text-primary">1972 a 1982</span> <span class="text-success">Delta S.A</span></li>
+				
+				<li nome="Artesanato Lisa -ivros Irradiantes S. A.	">Artesanato <span class="text-success"> Lisa Livros Irradiantes S. A.</span></li>
+				
+				<li nome="As Chaves do Reino A. J. Cronin 1966 José Olympio Editôra S. A. 15 edição">As Chaves do Reino <span class="text-warning">A. J. Cronin </span> <span class="text-primary">1966</span>	<span class="text-success">José Olympio Editôra S. A.</span> <span class="text-info">15</span></li>
+				
+				<!---------------------------------------- Letra B ---------------------------------------->
+			
+				<li nome="Biblioteca da Língua Portuguesa 1967	Lisa - Livr	4">Biblioteca da Língua Portuguesa <span class="text-primary">1967</span> <span class="text-success">Lisa Livros Irradiantes S. A.</span><span class="text-info"> 1 ao 6</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (Análise do Balanço) Rogério Pfaltzgraff Récord Editôra">Biblioteca de Contabilidade (Análise do Balanço) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Récord Editôra</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (Aspectos Científicos da Contabilidade) Rogério Pfaltzgraff Récord Editôra 5ª Edição">Biblioteca de Contabilidade (Aspectos Científicos da Contabilidade) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success"> Récord Editôra</span> <span class="text-info">5</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (O Balanço das Sociedades Anônimas) Rogério Pfaltzgraff Editôra Minerva">Biblioteca de Contabilidade (O Balanço das Sociedades Anônimas) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (Pesquisa Contáveis) Rogério Pfaltzgraff 1959 Editôra Minerva">Biblioteca de Contabilidade (Pesquisa Contáveis) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-primary">1959</span> <span class="text-success">Editôra Minerva</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (Seleções de Contabilidade) Rogério Pfaltzgraff Editôra Minerva">Biblioteca de Contabilidade (Seleções de Contabilidade) <span class="text-warning">Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span></li>
+				
+				<li nome="Biblioteca de Contabilidade (Sociedades por Ações) Rogério Pfaltzgraff Récord Editôra	3ª Edição">Biblioteca de Contabilidade (Sociedades por Ações)<span class="text-warning"> Rogério Pfaltzgraff</span> <span class="text-success">Editôra Minerva</span><span class="text-info"> 3</span></li>
+				
+				<li nome="Biblioteca de Contabilidade e Prática de Comércio 1971 Novo Brasil Santa Helena Editora Ltda.">Biblioteca de Contabilidade e Prática de Comércio <span class="text-primary">1971</span> <span class="text-success">Novo Brasil</span> <span class="text-danger"> Santa Helena Editora Ltda.</span></li>
+				
+				<li nome="Biblioteca do Contador Eryma Caneiro Editora de Livro S.A.">Biblioteca do Contador <span class="text-warning">Eryma Caneiro</span> <span class="text-success">Editora de Livro S.A.</span></li>
+				
+				<li nome="Bizâncio Philip Sherrard 1966/1970 Time Inc.">Bizâncio <span class="text-warning"> Philip Sherrard</span> <span class="text-primary">1966/1970</span> <span class="text-success">Time Inc.</span></li>
+				
+				<li nome="Brasil - O livro dos 500 1990 anos Caras S.A.">Brasil - O Livro dos 500 anos <span class="text-primary">1990</span> <span class="text-success">Caras S.A.</span></li>
+				
+				<li nome="Brasil Histórias,costumes e lendas Editora Três Ltda.">Brasil Histórias,costumes e lendas <span class="text-success">Editora Três Ltda.</span></li>
+				
+				<!---------------------------------------- Letra C ---------------------------------------->
+			
+				<li nome="China Antiga Edward H.Schafer 1973 Time Inc.">China Antiga <span class="text-warning">Edward H. Schafer</span>  <span class="text-primary">1973</span> <span class="text-success">Time Inc.</span></li>
+				
+				<li nome="Clássicos para a Juventude 1965 Matos Peixoto S.A. 1">Clássicos para a Juventude <span class="text-primary">1965</span> <span class="text-success">Matos Peixoto S.A.</span> <span class="text-info">1</span></li>
+				
+				<li nome="Coleção Ciência Para Todos (Atmosfera 2) 1966	Fulgor Limitada	3">Coleção Ciência Para Todos (Atmosfera 2) <span class="text-primary">1966</span> <span class="text-success">Fulgor Limitada</span> <span class="text-info">3</span></li>
+				
+				<li nome="Coleção Clássicos Jackson 1965 Gráfica Editora LTDA.">Coleção Clássicos Jackson <span class="text-primary">1965</span> <span class="text-success">Gráfica Editora LTDA.</span></li>
+				
+				<li nome="Coleção de José de Alencar José de Alencar ">Coleção de José de Alencar <span class="text-warning">José de Alencar</span></li>
+				
+				<li nome="Coleção de Machado de Assis 1965	Cultrix	3">Coleção de Machado de Assis <span class="text-primary">1965</span> <span class="text-success">Cultrix</span><span class="text-info"> 3</span></li>
+				
+				<li nome="Coleção Pearl Buck 1961 Edições Melhoramentos 2">Coleção Pearl Buck <span class="text-primary">1961</span> <span class="text-success">Edições Melhoramentos</span><span class="text-info"> 1 ao 8</span></li>
+				
+				<li nome="Coleção Rio 4 Séculos 1965 José Olympo">Coleção Rio 4 Séculos <span class="text-primary">1965</span> <span class="text-warning">José Olympo</span><span class="text-info"> 1 ao 6</span></li>
+				
+				<li nome="Coleção Romance Real 1958	Prometeu">Coleção Romance Real <span class="text-primary">1958</span> <span class="text-warning">Prometeu</span> <span class="text-info"> 1 ao 9</span></li>
+				
+				<li nome="Como Funciona enciclopédia de Ciência e Técnica 1975 a 1979 Marshall Cavendish Ltda.2º edição">Como Funciona enciclopédia de Ciência e Técnica <span class="text-primary">1975 a 1979</span> <span class="text-success">Marshall Cavendish Ltda.</span>	<span class="text-info">2</span></li>
+				
+				<li nome="Conhecer Dicionário Enciclopédico 1970 e 1972	Abril Cultural">Conhecer Dicionário Enciclopédico <span class="text-primary"> 1970 e 1972</span> <span class="text-success">Abril Cultural</span> </li>
+				
+				<li nome="Consolidação das leis do trabalho (CLT) 1986	LTR Editora LTDA. 19">Consolidação das leis do trabalho (CLT) <span class="text-primary">1986</span> <span class="text-success">LTR Editora LTDA.</span> <span class="text-info">19</span> </li>
+				
+				<li nome="Contabilidade Comercial e Contabilidade Comercial Das Sociedades 1978	Editora Brasiliense	6.ª Edição">Contabilidade Comercial e Contabilidade Comercial Das Sociedades <span class="text-primary">1978</span> <span class="text-success">Editora Brasiliense</span> <span class="text-info">6</span></li>
+				
+				<li nome="Contos Sem Data 1956 Civilização Brasileira Rio de Janeiro 1 ao 12">Contos Sem Data <span class="text-primary">1956</span> <span class="text-success">Civilização Brasileira </span> <span class="text-info">1 ao 12</span> </li>
+				
+				<li nome="Convite à Psicologia Prática Mário Ferreira dos Santos 1965 LOGOS LTDA. 5">Convite à Psicologia Prática <span class="text-primary">1965</span> <span class="text-warning">Mário Ferreira dos Santos</span> <span class="text-success">LOGOS LTDA.</span> <span class="text-danger">5</span> </li>
+				
+				<li nome="Corpo Humano - A Máquina da Vida LITERATURA INFANTIL - 028.5 2006 DCL - Difusão Cultural do Livro LTDA. 1"> Corpo Humano - A Máquina da Vida <span class="text-primary">2006</span> <span class="text-success">DCL - Difusão Cultural do Livro LTDA.</span> <span class="text-danger">1</span> </li>
+				
+				<li nome="Criando Nossos Filhos 2000 Klick editora 8 a 11"> Criando Nossos Filhos <span class="text-primary">2000</span> <span class="text-success">Klick editora</span> <span class="text-info">8 a 11</span></li>
+				
+				<li nome="Criança a Adolescência e a Vida(Higiene Mental das Crianças e Adolescentes) DEP. de Instrução Pública de Genebra ENSINAR - DAR AULAS - 371.102 Linográfica Editora LTDA.	7"> Criança a Adolescência e a Vida(Higiene Mental das Crianças e Adolescentes) <span class="text-warning">DEP. de Instrução Pública de Genebra</span> <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">7</span></li>
+				
+				<li nome="Criança a Adolescência e a Vida(Timidez e Adolescencia) Jean Lacroix Linográfica Editora LTDA. 6"> Criança a Adolescência e a Vida(Timidez e Adolescencia) <span class="text-warning">Jean Lacroix</span> <span class="text-success">Linográfica Editora LTDA.</span> <span class="text-info">6</span></li>
+				
+				<li nome="Crianças Difíceis Ofélia Boisson Cardoso 1967	Editora Gráfica Santana Ltda. 2 1 ao 2"> Crianças Difíceis <span class="text-warning">Ofélia Boisson Cardoso</span> <span class="text-primary">1967</span>	<span class="text-success">Editora Gráfica Santana Ltda.</span> <span class="text-danger">2</span> <span class="text-info">1 ao 2 </span> </li>
+				
+				<li nome="Curso de Instrução Programada George R. Terry	1993 Editora Brasileirense 5 1 e 4"> Curso de Instrução Programada <span class="text-warning">George R. Terry</span> <span class="text-primary">1993</span> <span class="text-success">Editora Brasileirense</span> <span class="text-danger">5</span> <span class="text-info">1 e 4</span> </li>
+				
+				<li nome="Código de Processo Civil 1985 Saraiva 15"> Código de Processo Civil </span> <span class="text-primary">1985</span> <span class="text-success">Saraiva</span> <span class="text-danger">15</span></li>
+				
+				<li nome="Código Penal e Legislação Complementar 1986 Forense 8"> Código Penal e Legislação Complementar <span class="text-primary">1986</span> <span class="text-success">Forense</span> <span class="text-danger">8</span> </li>
+			
+			<!---------------------------------------- Letra D ---------------------------------------->
+			
+				<li nome="Da Seara de Booz Humberto de Campos 1954"> Da Seara de Booz<span class="text-warning"> Humberto de Campos</span> <span class="text-primary"> 1954</span> <span class="text-success"> </span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
+			
+				<li nome="Da Seara de Booz Humberto de Campos 1915-1916 Mérito S.A 2 e 29"> Da Seara de Booz<span class="text-warning"> Humberto de Campos</span> <span class="text-primary"> 1915-1916</span> <span class="text-success"> Mérito S.A</span> <span class="text-danger"> </span> <span class="text-info"> 2 e 29</span></li>
+			
+				<li nome="Descobrimentos e Pioneiros do Nosso Tempo 1975 Amigos do Livro 1 e 3"> Descobrimentos e Pioneiros do Nosso Tempo<span class="text-warning"> </span> <span class="text-primary"> 1975</span> <span class="text-success"> Amigos do Livro</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 3</span></li>
+			
+				<li nome="Desenvolvimento da Criança 1972 Abril Cultural S.A. 1"> Desenvolvimento da Criança<span class="text-warning"> </span> <span class="text-primary"> 1972</span> <span class="text-success"> Abril Cultural S.A.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
+			
+				<li nome="Dicionário Barsa da Língua Porguêsa 2005 Barsa Planeta Internacional Ltda. 1"> Dicionário Barsa da Língua Porguêsa<span class="text-warning"> </span> <span class="text-primary"> 2005</span> <span class="text-success"> Barsa Planeta Internacional Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 2</span></li>
+			
+				<li nome="Dicionário Barsa de Sinônimos e Antônimos 2005 Barsa Planeta Internacional Ltda. 1"> Dicionário Barsa de Sinônimos e Antônimos<span class="text-warning"> </span> <span class="text-primary"> 2005</span> <span class="text-success"> Barsa Planeta Internacional Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
+			
+				<li nome="Dicionário Brasileiro (Inglês - Português) 1995 Encyclopedia Britannica 1"> Dicionário Brasileiro (Inglês - Português)<span class="text-warning"> </span> <span class="text-primary"> 1995</span> <span class="text-success"> Encyclopedia Britannica</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
+			
+				<li nome="Dicionário Brasileiro da Língua Portuguesa 1980 Encyclopedia Britannica 4 1 e 2"> Dicionário Brasileiro da Língua Portuguesa<span class="text-warning"> </span> <span class="text-primary"> 1980</span> <span class="text-success"> Encyclopedia Britannica</span> <span class="text-danger"> 4</span> <span class="text-info"> 1 e 2</span></li>
+			
+				<li nome="Dicionário Brasileiro de Língua Portuguesa 1995 Encyclopédia Britannica do Brasil 14 1 ao 3"> Dicionário Brasileiro de Língua Portuguesa<span class="text-warning"> </span> <span class="text-primary"> 1995</span> <span class="text-success"> Encyclopédia Britannica do Brasil</span> <span class="text-danger"> 14</span> <span class="text-info"> 1 ao 3</span></li>
+			
+				<li nome="Dicionário Conteporâneo da Língua Portuguesa (Caldas Aulete) 1978	Delta S.A. 3 1 ao 5"> Dicionário Conteporâneo da Língua Portuguesa (Caldas Aulete)<span class="text-warning"> Caldas Aulete</span> <span class="text-primary"> 1978</span> <span class="text-success"> Delta S.A</span> <span class="text-danger"> 3</span> <span class="text-info"> 1 ao 5</span></li>
+			
+				<li nome="Dicionário Conteporâneo da Língua Portuguêsa - Caldas Aulete 1970	Delta S.A 2 1 ao 4"> Dicionário Conteporâneo da Língua Portuguêsa - Caldas Aulete<span class="text-warning"> </span> <span class="text-primary"> 1970</span> <span class="text-success"> Delta S.A</span> <span class="text-danger"> 2</span> <span class="text-info"> 1 ao 4</span></li>
+			
+				<li nome="Dicionário de Pedagogia e Puericultura Mario Ferreira dos Santos 1965 Editora Matese 1"> Dicionário de Pedagogia e Puericultura<span class="text-warning"> Mario Ferreira dos Santos</span> <span class="text-primary"> 1965</span> <span class="text-success"> Editora Matese</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
+			
+				<li nome="Dicionário de Sinônimos e Antônimos Arnaldo A. Marmo 1974	Científica Guanabara 1,2"> Dicionário de Sinônimos e Antônimos<span class="text-warning"> Arnaldo A. Marmo</span> <span class="text-primary"> 1974</span> <span class="text-success"> Científica Guanabara</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 2</span></li>
+			
+				<li nome="Dicionário de Verbos e Regimes Francisco Fernandes 1954 Globo 4"> Dicionário de Verbos e Regimes<span class="text-warning"> Francisco Fernandes</span> <span class="text-primary"> 1954</span> <span class="text-success"> Globo</span> <span class="text-danger"> 4</span> <span class="text-info"></span></li>
+				
+				<li nome="Dicionário do Folclore Brasileiro 2000 Global Editora	9 "> Dicionário do Folclore Brasileiro<span class="text-warning"> </span> <span class="text-primary"> 2000</span> <span class="text-success"> Global Editora</span> <span class="text-danger"> 9</span> <span class="text-info"> </span></li>
+			
+				<li nome="Dicionário Universal de Pesquisas Biográficas AGA-DES 1971 Livraria Editora Iracema Ltda. 1"> Dicionário Universal de Pesquisas Biográficas AGA-DES<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
+			
+				<li nome="Dicionário Universal de Pesquisas Biográficas DIA-DEA 1971 Livraria Editora Iracema Ltda. 2"> Dicionário Universal de Pesquisas Biográficas DIA-DEA<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 2</span></li>
+			
+				<li nome="Dicionário Universal de Pesquisas Biográficas LEG-POM 1971 Livraria Editora Iracema Ltda. 3"> Dicionário Universal de Pesquisas Biográficas LEG-POM<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 3</span></li>
+			
+				<li nome="Dicionário Universal de Pesquisas Biográficas PON-ZOL 1971 Livraria Editora Iracema Ltda. 4"> Dicionário Universal de Pesquisas Biográficas PON-ZOL<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 4</span></li>
+			
+				<li nome="Dicioário Jurídico e Repertório Processual Roberto Barcellos de Magalhães 1990 Editora Didática E Científica LTDA. 1 ao 3"> Dicioário Jurídico e Repertório Processual<span class="text-warning"> Roberto Barcellos de Magalhães</span> <span class="text-primary"> 1990</span> <span class="text-success"> Editora Didática E Científica LTDA.</span> <span class="text-danger"> </span> <span class="text-info"> 1 ao 3</span></li>
+			
+				<li nome="Dinheiro no Brasil Léo Christiano Editoral LTDA 2"> Dinheiro no Brasil<span class="text-warning"> </span> <span class="text-primary"> </span> <span class="text-success"> Léo Christiano Editoral LTDA</span> <span class="text-danger"> </span> <span class="text-info"> 2</span></li>
+			
+				<li nome="Direito Penal E. Magalhães Noronha Saraiva S.A. 10 1, 3 e 4"> Direito Penal<span class="text-warning"> E. Magalhães Noronha</span> <span class="text-primary"> </span> <span class="text-success"> Saraiva S.A.</span> <span class="text-danger"> </span> <span class="text-info"> 1,3 e 4</span></li>
+			
+				<li nome="Domine o Seu Sistema Nervoso Dr. David Harold Fink Gráfica Editora EDIGRAF Ltda."> Domine o Seu Sistema Nervoso<span class="text-warning"> Dr. David Harold Fink</span> <span class="text-primary"> </span> <span class="text-success"> Gráfica Editora EDIGRAF Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
+			
+				<li nome="Dona Flor e Seus Dois Maridos Jorge Amado 1966 Circulo do Livro S.A."> Dona Flor e Seus Dois Maridos<span class="text-warning"> Jorge Amado</span> <span class="text-primary"> 1966</span> <span class="text-success"> Circulo do Livro S.A.</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
+			
+			
+			
+				<!---------------------------------------- Letra E ---------------------------------------->
+			
+			
+				<li nome="EDIPE - Enciclopédico Didática de Informação e Pesquisa Educacional 1989 Livraria Editora Iracema LTDA. 6 2"> EDIPE - Enciclopédico Didática de Informação e Pesquisa Educacional <span class="text-primary">1989</span> <span class="text-success">Livraria Editora Iracema LTDA.</span> <span class="text-danger">6</span> <span class="text-info">2</span></li>
+				
+				<li nome="Educação Física Mundial Tecnicas Modernas Raoul Mollet 1961-1962	Honor Editorial Ltda. 3 4"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Raoul Mollet</span> <span class="text-primary">1961-1962</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">3</span> <span class="text-info">4</span></span></li>
+				
+				<li nome="Educação Física Mundial Tecnicas Modernas Stephen Huffaker 1972 Honor Editorial Ltda.	2 3"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Stephen Huffaker</span> <span class="text-primary">1972</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">2</span> <span class="text-info">3</span></li>
+				
+				<li nome="Educação Física Mundial Tecnicas Modernas Kenneth H. Cooper 1972	Honor Editorial Ltda. 2 2"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Kenneth H. Cooper</span> <span class="text-primary">1972</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">2</span> <span class="text-info">2</span></li>
+				
+				<li nome="Educação Física Mundial Tecnicas Modernas Raoul Mollet 1972 Honor Editorial Ltda. 5"> Educação Física Mundial Tecnicas Modernas Raoul Mollet 1972 Honor Editorial Ltda. 5<span class="text-warning"> </span> <span class="text-primary"> </span> <span class="text-success"> </span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
+				
+				
+				<!---------------------------------------- Letra F ---------------------------------------->
+			
+			
+				<li nome="Filhos - Educando com Sucesso Nancy Van Pelt 1996	Casa Publicadora Brasileira"> Filhos - Educando com Sucesso<span class="text-warning"> Nancy Van Pelt</span> <span class="text-primary"> 1996</span> <span class="text-success"> Casa Publicadora Brasileira</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
+				
+				<li nome="Física Química Biologia Houghton Miffin 1977 La Liberaria 3 e 4"> Física Química Biologia<span class="text-warning"> Houghton Miffin</span> <span class="text-primary"> 1977</span> <span class="text-success"> La Liberaria</span> <span class="text-danger"> </span> <span class="text-info"> 3 e 4</span></li>
+				
+				<li nome="Física/ Química Modernas 1970 Edições Fortaleza 1 ao 5"> Física/ Química Modernas<span class="text-warning"> </span> <span class="text-primary"> 1970</span> <span class="text-success"> Edições Fortaleza</span> <span class="text-danger"> </span> <span class="text-info"> 1 ao 5</span></li>
+				
+				</ul>
+			</div>
+			<div class="enciclopedia hide">
+				<section id="todos" class="sec__title home-intro"> <span class="text-start">ENCICLOPÉDIAS  </span><span class="text-secondary"> A - Z</span></section>
 
-<!---------------------------------------- Letra D ---------------------------------------->
+				<ul id="all">
+				<li nome="Corpo Humano - A Máquina da Vida LITERATURA INFANTIL - 028.5 2006 DCL - Difusão Cultural do Livro LTDA. 1"> Corpo Humano - A Máquina da Vida <span class="text-primary">2006</span> <span class="text-success">DCL - Difusão Cultural do Livro LTDA.</span> <span class="text-danger">1</span> </li>
+				<li nome="A Criança a Adolescência e a Vida(Nossas crianças na Escola) Robert Dottrens Linográfica Editora LTDA.">A Criança a Adolescência e a Vida(Nossas crianças na Escola)		<span class="text-warning">Robert Dottrens</span>		<span class="text-success">Linográfica Editora LTDA.</span>	</li>
+				</ul>
+			</div>
+		  </div>
+</section>
 
-	<li nome="Da Seara de Booz Humberto de Campos 1954"> Da Seara de Booz<span class="text-warning"> Humberto de Campos</span> <span class="text-primary"> 1954</span> <span class="text-success"> </span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
-
-	<li nome="Da Seara de Booz Humberto de Campos 1915-1916 Mérito S.A 2 e 29"> Da Seara de Booz<span class="text-warning"> Humberto de Campos</span> <span class="text-primary"> 1915-1916</span> <span class="text-success"> Mérito S.A</span> <span class="text-danger"> </span> <span class="text-info"> 2 e 29</span></li>
-
-	<li nome="Descobrimentos e Pioneiros do Nosso Tempo 1975 Amigos do Livro 1 e 3"> Descobrimentos e Pioneiros do Nosso Tempo<span class="text-warning"> </span> <span class="text-primary"> 1975</span> <span class="text-success"> Amigos do Livro</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 3</span></li>
-
-	<li nome="Desenvolvimento da Criança 1972 Abril Cultural S.A. 1"> Desenvolvimento da Criança<span class="text-warning"> </span> <span class="text-primary"> 1972</span> <span class="text-success"> Abril Cultural S.A.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
-
-	<li nome="Dicionário Barsa da Língua Porguêsa 2005 Barsa Planeta Internacional Ltda. 1"> Dicionário Barsa da Língua Porguêsa<span class="text-warning"> </span> <span class="text-primary"> 2005</span> <span class="text-success"> Barsa Planeta Internacional Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 2</span></li>
-
-	<li nome="Dicionário Barsa de Sinônimos e Antônimos 2005 Barsa Planeta Internacional Ltda. 1"> Dicionário Barsa de Sinônimos e Antônimos<span class="text-warning"> </span> <span class="text-primary"> 2005</span> <span class="text-success"> Barsa Planeta Internacional Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
-
-	<li nome="Dicionário Brasileiro (Inglês - Português) 1995 Encyclopedia Britannica 1"> Dicionário Brasileiro (Inglês - Português)<span class="text-warning"> </span> <span class="text-primary"> 1995</span> <span class="text-success"> Encyclopedia Britannica</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
-
-	<li nome="Dicionário Brasileiro da Língua Portuguesa 1980 Encyclopedia Britannica 4 1 e 2"> Dicionário Brasileiro da Língua Portuguesa<span class="text-warning"> </span> <span class="text-primary"> 1980</span> <span class="text-success"> Encyclopedia Britannica</span> <span class="text-danger"> 4</span> <span class="text-info"> 1 e 2</span></li>
-
-	<li nome="Dicionário Brasileiro de Língua Portuguesa 1995 Encyclopédia Britannica do Brasil 14 1 ao 3"> Dicionário Brasileiro de Língua Portuguesa<span class="text-warning"> </span> <span class="text-primary"> 1995</span> <span class="text-success"> Encyclopédia Britannica do Brasil</span> <span class="text-danger"> 14</span> <span class="text-info"> 1 ao 3</span></li>
-
-	<li nome="Dicionário Conteporâneo da Língua Portuguesa (Caldas Aulete) 1978	Delta S.A. 3 1 ao 5"> Dicionário Conteporâneo da Língua Portuguesa (Caldas Aulete)<span class="text-warning"> Caldas Aulete</span> <span class="text-primary"> 1978</span> <span class="text-success"> Delta S.A</span> <span class="text-danger"> 3</span> <span class="text-info"> 1 ao 5</span></li>
-
-	<li nome="Dicionário Conteporâneo da Língua Portuguêsa - Caldas Aulete 1970	Delta S.A 2 1 ao 4"> Dicionário Conteporâneo da Língua Portuguêsa - Caldas Aulete<span class="text-warning"> </span> <span class="text-primary"> 1970</span> <span class="text-success"> Delta S.A</span> <span class="text-danger"> 2</span> <span class="text-info"> 1 ao 4</span></li>
-
-	<li nome="Dicionário de Pedagogia e Puericultura Mario Ferreira dos Santos 1965 Editora Matese 1"> Dicionário de Pedagogia e Puericultura<span class="text-warning"> Mario Ferreira dos Santos</span> <span class="text-primary"> 1965</span> <span class="text-success"> Editora Matese</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
-
-	<li nome="Dicionário de Sinônimos e Antônimos Arnaldo A. Marmo 1974	Científica Guanabara 1,2"> Dicionário de Sinônimos e Antônimos<span class="text-warning"> Arnaldo A. Marmo</span> <span class="text-primary"> 1974</span> <span class="text-success"> Científica Guanabara</span> <span class="text-danger"> </span> <span class="text-info"> 1 e 2</span></li>
-
-	<li nome="Dicionário de Verbos e Regimes Francisco Fernandes 1954 Globo 4"> Dicionário de Verbos e Regimes<span class="text-warning"> Francisco Fernandes</span> <span class="text-primary"> 1954</span> <span class="text-success"> Globo</span> <span class="text-danger"> 4</span> <span class="text-info"></span></li>
-	
-	<li nome="Dicionário do Folclore Brasileiro 2000 Global Editora	9 "> Dicionário do Folclore Brasileiro<span class="text-warning"> </span> <span class="text-primary"> 2000</span> <span class="text-success"> Global Editora</span> <span class="text-danger"> 9</span> <span class="text-info"> </span></li>
-
-	<li nome="Dicionário Universal de Pesquisas Biográficas AGA-DES 1971 Livraria Editora Iracema Ltda. 1"> Dicionário Universal de Pesquisas Biográficas AGA-DES<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 1</span></li>
-
-	<li nome="Dicionário Universal de Pesquisas Biográficas DIA-DEA 1971 Livraria Editora Iracema Ltda. 2"> Dicionário Universal de Pesquisas Biográficas DIA-DEA<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 2</span></li>
-
-	<li nome="Dicionário Universal de Pesquisas Biográficas LEG-POM 1971 Livraria Editora Iracema Ltda. 3"> Dicionário Universal de Pesquisas Biográficas LEG-POM<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 3</span></li>
-
-	<li nome="Dicionário Universal de Pesquisas Biográficas PON-ZOL 1971 Livraria Editora Iracema Ltda. 4"> Dicionário Universal de Pesquisas Biográficas PON-ZOL<span class="text-warning"> </span> <span class="text-primary"> 1971</span> <span class="text-success"> Livraria Editora Iracema Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> 4</span></li>
-
-	<li nome="Dicioário Jurídico e Repertório Processual Roberto Barcellos de Magalhães 1990 Editora Didática E Científica LTDA. 1 ao 3"> Dicioário Jurídico e Repertório Processual<span class="text-warning"> Roberto Barcellos de Magalhães</span> <span class="text-primary"> 1990</span> <span class="text-success"> Editora Didática E Científica LTDA.</span> <span class="text-danger"> </span> <span class="text-info"> 1 ao 3</span></li>
-
-	<li nome="Dinheiro no Brasil Léo Christiano Editoral LTDA 2"> Dinheiro no Brasil<span class="text-warning"> </span> <span class="text-primary"> </span> <span class="text-success"> Léo Christiano Editoral LTDA</span> <span class="text-danger"> </span> <span class="text-info"> 2</span></li>
-
-	<li nome="Direito Penal E. Magalhães Noronha Saraiva S.A. 10 1, 3 e 4"> Direito Penal<span class="text-warning"> E. Magalhães Noronha</span> <span class="text-primary"> </span> <span class="text-success"> Saraiva S.A.</span> <span class="text-danger"> </span> <span class="text-info"> 1,3 e 4</span></li>
-
-	<li nome="Domine o Seu Sistema Nervoso Dr. David Harold Fink Gráfica Editora EDIGRAF Ltda."> Domine o Seu Sistema Nervoso<span class="text-warning"> Dr. David Harold Fink</span> <span class="text-primary"> </span> <span class="text-success"> Gráfica Editora EDIGRAF Ltda.</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
-
-	<li nome="Dona Flor e Seus Dois Maridos Jorge Amado 1966 Circulo do Livro S.A."> Dona Flor e Seus Dois Maridos<span class="text-warning"> Jorge Amado</span> <span class="text-primary"> 1966</span> <span class="text-success"> Circulo do Livro S.A.</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
-
-
-
-	<!---------------------------------------- Letra E ---------------------------------------->
-
-
-	<li nome="EDIPE - Enciclopédico Didática de Informação e Pesquisa Educacional 1989 Livraria Editora Iracema LTDA. 6 2"> EDIPE - Enciclopédico Didática de Informação e Pesquisa Educacional <span class="text-primary">1989</span> <span class="text-success">Livraria Editora Iracema LTDA.</span> <span class="text-danger">6</span> <span class="text-info">2</span></li>
-	
-	<li nome="Educação Física Mundial Tecnicas Modernas Raoul Mollet 1961-1962	Honor Editorial Ltda. 3 4"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Raoul Mollet</span> <span class="text-primary">1961-1962</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">3</span> <span class="text-info">4</span></span></li>
-	
-	<li nome="Educação Física Mundial Tecnicas Modernas Stephen Huffaker 1972 Honor Editorial Ltda.	2 3"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Stephen Huffaker</span> <span class="text-primary">1972</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">2</span> <span class="text-info">3</span></li>
-	
-	<li nome="Educação Física Mundial Tecnicas Modernas Kenneth H. Cooper 1972	Honor Editorial Ltda. 2 2"> Educação Física Mundial Tecnicas Modernas <span class="text-warning">Kenneth H. Cooper</span> <span class="text-primary">1972</span> <span class="text-success">Honor Editorial Ltda.</span> <span class="text-danger">2</span> <span class="text-info">2</span></li>
-	
-	<li nome="Educação Física Mundial Tecnicas Modernas Raoul Mollet 1972 Honor Editorial Ltda. 5"> Educação Física Mundial Tecnicas Modernas Raoul Mollet 1972 Honor Editorial Ltda. 5<span class="text-warning"> </span> <span class="text-primary"> </span> <span class="text-success"> </span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
-	
-	
-	<!---------------------------------------- Letra F ---------------------------------------->
-
-
-	<li nome="Filhos - Educando com Sucesso Nancy Van Pelt 1996	Casa Publicadora Brasileira"> Filhos - Educando com Sucesso<span class="text-warning"> Nancy Van Pelt</span> <span class="text-primary"> 1996</span> <span class="text-success"> Casa Publicadora Brasileira</span> <span class="text-danger"> </span> <span class="text-info"> </span></li>
-	
-	<li nome="Física Química Biologia Houghton Miffin 1977 La Liberaria 3 e 4"> Física Química Biologia<span class="text-warning"> Houghton Miffin</span> <span class="text-primary"> 1977</span> <span class="text-success"> La Liberaria</span> <span class="text-danger"> </span> <span class="text-info"> 3 e 4</span></li>
-	
-	<li nome="Física/ Química Modernas 1970 Edições Fortaleza 1 ao 5"> Física/ Química Modernas<span class="text-warning"> </span> <span class="text-primary"> 1970</span> <span class="text-success"> Edições Fortaleza</span> <span class="text-danger"> </span> <span class="text-info"> 1 ao 5</span></li>
-	
-</ul>
 
 <script src="../js/sistema_de_busca.js"></script>
 
@@ -295,5 +319,6 @@
 
 </div>
 <script src="../js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </body>
 </html>
