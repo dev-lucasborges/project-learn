@@ -38,7 +38,7 @@ body {
 }
 
 .container2 p span.typed-text {
-  font-size: 2.7rem;
+  font-size: calc(1.775rem + 1.5vw);
   font-weight: bold;
   color: rgb(var(--primary-color));
 }
@@ -154,6 +154,7 @@ header{
 
 .sec2{
     text-align: center;
+    transition: all 1s;
 }
 
 .frh2{
