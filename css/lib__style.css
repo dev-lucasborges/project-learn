@@ -64,6 +64,11 @@ a {
 }
 
 /*      REUSABLE END        */
+
+#all{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 .allcontent{
   text-align: center;
 }
@@ -73,8 +78,6 @@ ul {
 
 li{
   list-style: none;
-  margin-left: 20px;
-  margin-right: 20px;
   padding: 12px 20px;
   border: 1px solid;
   border-color: #282828;
@@ -199,4 +202,12 @@ body {
 
 .pointer{
   cursor: pointer;
+}
+
+.blur{
+  filter:blur(5px)
+}
+
+.outline{
+  text-decoration:underline;
 }

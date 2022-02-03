@@ -87,6 +87,15 @@
   box-sizing: border-box;
 }
 
+.b-1{
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.b-1:hover{
+  background-color: #06357a;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -5537,7 +5546,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #121212;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5566,7 +5575,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #1c1c1e;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5584,6 +5593,7 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  text-align: start;
 }
 
 .modal-footer {
@@ -5593,7 +5603,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #1c1c1e;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -5894,6 +5904,8 @@ textarea.form-control-lg {
   display: block;
   width: 1rem;
   height: 0.5rem;
+
+
 }
 .popover .popover-arrow::before, .popover .popover-arrow::after {
   position: absolute;

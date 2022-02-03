@@ -1,0 +1,36 @@
+ <!-- Modal -->
+ <a class="bg-primary p-1 b-1" data-bs-toggle="modal" data-bs-target="#Modal0">
+    <i class="fa fa-info-circle"></i>
+  </a>
+
+  <div class="modal fade" id="Modal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">x</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="text-primary">Data:
+<b> x</b></div>
+            <div class="text-success">Editora:
+<b> x</b></div>
+            <div class="text-warning">Autor:
+<b> x</b></div>
+            <div class="text-secondary">Edição:
+<b> x</b></div>
+            <div class="text-info">Local:
+<b> x</b></div>
+            <div class="text-light">Volumes:
+<b> x</b></div>
+            <div class="text-danger">Localização na biblioteca:
+<b> x</b></div>
+
+        </div>
+        <div class="modal-footer">
+            <p class="text-muted text-start">Nem todas informações podem ter sido encontradas. <a class="text-muted outline" href="help.html">Leia mais</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
