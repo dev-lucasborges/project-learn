@@ -53,31 +53,53 @@
   </header>
 
 
+
+
 <!------------------------------------- navbar end------------------------------------>
+<!-- The Timeline -->
+<h1 class="text-center pt-5 parallax" data-rellax-speed="1">Bem vindo ao site da Biblioteca do <b>Luiz Reid</b></h1>
+<p class="text-center h5 text-muted m-3 parallax" data-rellax-speed="2" data-rellax-zindex="1">Como usar ?</p>
 
-<!------------------------------------- shortcuts ------------------------------------>
+<ul class="timeline">
 
-<div class="allcontent mx-auto">
-	
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag home-intro">1° Passo</span>
+			</div>
+			<div class="desc">Selecione a categoria ou pesquise o livro que quer achar</div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">2° Passo</span>
+			</div>
+			<div class="desc">Clique no botão <i class="fa fa-info-circle"> </i> para ver mais detalhes e ver onde ele está localizado</div>
+		</div>
+	</li>
 
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">3° Passo</span>
+			</div>
+			<div class="desc">De acordo com a posição em <span class="text-danger"> "Localização na biblioteca"</span> procure-o na biblioteca!</div>
+		</div>
+	</li>
+  
+</ul>
 
-	
-<!------------------------------------- shortcuts end ------------------------------------>
-
-			<!-- <div class="mt-3 text-center container-fluid">
-				<div class="mb-2 info-bg d-inline-flex">Título</div>
-				<div class="mb-2 info-bg text-warning d-inline-flex">Autor</div>
-				<div class="mb-2 info-bg text-primary d-inline-flex"> de produção</div>
-				<div class="mb-2 info-bg text-success d-inline-flex">Editora</div>
-				<div class="mb-2 info-bg text-danger d-inline-flex">Edição</div>
-				<div class="mb-2 info-bg text-info d-inline-flex">Volume</div>
-				<div class="mb-2 info-bg text-secondary d-inline-flex">Onde achar na biblioteca</div>
-			</div> -->
 
 
 <!------------------------------------- all books ------------------------------------>
 
-<div class="select-area">
+<div class="parallax" data-rellax-speed="6">
+<div class="select-area text-center">
 	
 
     <div class="bg-primary btn text-light m-1">
@@ -93,19 +115,19 @@
 </div>
 
 
- <div class="my-info-1">
+ <div class="my-info-1 text-center">
 			<div class="all">
-				<section id="todos" class="sec__title home-intro"> <span class="text-start">TODOS LIVROS  <span class="text-secondary"> A - Z</section>
+				<section id="todos" class="sec__title"> <span class="text-start">TODOS LIVROS  <span class="text-secondary"> A - Z</section>
 					<section class="container">
 						<input id="search" class="form-control-sm mb-3 w-75 search__bar" search="all" placeholder="Pesquisar">
 					</section>
 				</section>
-				
+</div>
 				<ul id="all">
 					
 				<li nome="A Segunda Guerra Mundial 1988 Codex S.A.">A Segunda Guerra Mundial
 					  <!-- Modal -->
-					  <a class="bg-primary p-1 b-1" data-bs-toggle="modal" data-bs-target="#Modal0">
+					  <a class="bg-primary b-1 info-btn" data-bs-toggle="modal" data-bs-target="#Modal0">
 						<i class="fa fa-info-circle"></i>
 					  </a>
 
@@ -337,7 +359,10 @@
 		  </div>
 </section>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  var rellax = new Rellax('.parallax');
+  </script>
 <script src="../js/sistema_de_busca.js"></script>
 
 <!------------------------------------- all books(end) ------------------------------------>
