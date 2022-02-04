@@ -1,9 +1,9 @@
- <!-- Modal -->
- <a class="bg-primary p-1 b-1" data-bs-toggle="modal" data-bs-target="#Modal0">
-    <i class="fa fa-info-circle"></i>
+
+ <a class="bg-primary info-btn b-1" data-bs-toggle="modal" data-bs-target="#Modal">
+    <i class="fa fa-info-circle b-1 "></i>
   </a>
 
-  <div class="modal fade" id="Modal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -14,15 +14,17 @@
 
             <div class="text-primary">Data:
 <b> x</b></div>
-            <div class="text-success">Editora:
+            <div class="text-secondary">Editora:
 <b> x</b></div>
-            <div class="text-warning">Autor:
+            <div class="text-primary">Autor:
 <b> x</b></div>
             <div class="text-secondary">Edição:
 <b> x</b></div>
-            <div class="text-info">Local:
+            <div class="text-primary">Local:
 <b> x</b></div>
-            <div class="text-light">Volumes:
+            <div class="text-secondary">Volumes:
+<b> x</b></div>
+            <div class="text-secondary">Local:
 <b> x</b></div>
             <div class="text-danger">Localização na biblioteca:
 <b> x</b></div>

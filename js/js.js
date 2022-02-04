@@ -7,7 +7,7 @@
 		len = b.children.length;
 
 		a.onkeyup=function(){
-			
+		
 			val = this.value.toLowerCase();
 
 			for(i=0;i<len;i++){
@@ -24,6 +24,7 @@
 					b.children[i].style.display='none';
 			}
 		}
+
 	}
 
 	getgo('fin','rfin');

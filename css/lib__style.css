@@ -115,6 +115,7 @@ ul{
   color: white;
   border-color: rgb(var(--primary-color));
   transition: 1s;
+  text-transform: lowercase;
 }
 
 .search__bar:focus{
@@ -234,7 +235,9 @@ body {
   padding-right: 7px;
 }
 
-
+.timeline li:hover{
+  background-color: initial;
+}
 .timeline {
   position: relative;
   width: 660px;
