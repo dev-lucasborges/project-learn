@@ -87,6 +87,18 @@ ul{
     border-color: #282828;
     transition: 0.5s;
   }
+
+  .enciclopedia li{
+    padding-left: 0;
+    list-style: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid;
+    border-color: #282828;
+    transition: 0.5s;
+  }
   
   li:first-child{
    border-top-left-radius: 10px;
@@ -115,7 +127,6 @@ ul{
   color: white;
   border-color: rgb(var(--primary-color));
   transition: 1s;
-  text-transform: lowercase;
 }
 
 .search__bar:focus{

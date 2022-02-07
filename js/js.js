@@ -12,7 +12,7 @@
 
 			for(i=0;i<len;i++){
 			
-			re = new RegExp(val,"g")
+				re = new RegExp(val,"gi")
 
 				v = b.children[i].outerHTML.toLowerCase();
 				
