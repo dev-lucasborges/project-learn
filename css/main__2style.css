@@ -242,9 +242,13 @@ input{
   border-radius: 18px;
       border: solid 1px;
       border-color: rgb(var(--body-color-dark3));
+      width: 60%;
 }
 .img-res2{
   display: none;
+  width: 95%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .text-glow {
@@ -262,6 +266,11 @@ input{
   width: 35%;
 }
 
+.library-video{
+
+  border-radius: 18px;
+  border: #323232 solid 1px;
+}
 @media (max-width: 905px){
   .img-login{
     width: 70%;
