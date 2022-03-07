@@ -227,6 +227,9 @@ body {
   margin-left: 1rem;
 }
 
+.borderrr{
+  border-radius: 9px;
+}
 .pointer{
   cursor: pointer;
 }
