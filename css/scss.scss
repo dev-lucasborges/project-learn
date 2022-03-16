@@ -1,0 +1,179 @@
+// TODO
+// 1) Create back
+// 2) Flip
+
+/*
+ * General o>
+ *
+ * ==================== */
+ * {
+    box-sizing: border-box;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+  }
+  .container {
+    bottom: 0;
+    color: #e3e3e3;
+    display: block;
+    left: 0;
+    padding-top: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-weight: normal;
+  }
+  
+  /*
+   * The Card
+   *
+   * ==================== */
+
+//   .imgg{
+//       width: 10px;
+//   }
+  .cc,
+  .cc-back {
+    //background: linear-gradient(to left, #70257b, #8a2c94);
+    background-color: #6e2b77;
+    border-radius: 10px;
+    display: block;
+    height: 195px;
+    letter-spacing: .1rem;
+    margin: 60px auto;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 325px;
+  }
+  
+  .chip {
+    border-radius: 5px;
+    display: block;
+    height: 30px;
+    left: 30px;
+    position: absolute;
+    top: 50px;
+    width: 40px;
+  }
+
+  .chip img{
+      width: 80px;
+  }
+  
+  .nubank-logo {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    display: block;
+  }
+  .nubank-logo:after {
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: 'Platinum';
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .cc-number {
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 75px;
+    font-size: 20px;
+    left: 30px;
+    position: absolute;
+  }
+  
+  .cc-date {
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 40px;
+    left: 30px;
+    position: absolute;
+  }
+  
+  .cc-date.expiry {
+    left: 125px;
+  }
+  .cc-date.expiry:after {
+    -webkit-text-fill-color: #52185b;
+    content: 'Valid thru';
+    font-size: 8px;
+    left: -30px;
+    position: absolute;
+    text-transform: none;
+    top: -10px;
+  }
+  
+  .cc-name {
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 15px;
+    left: 30px;
+    position: absolute;
+  }
+  
+  /*
+   * Card back
+   */
+  .cc-magnet {
+    background-color: #c0c0c0;
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+  }
+  
+  /*
+   * MasterCard logo in pure CSS in just ONE element
+   * by Jaime Caballero (jaicab.com)
+   */
+  
+  @import url(https://fonts.googleapis.com/css?family=Droid+Sans:700);
+  
+  $mcd-red: #cd0001;
+  $mcd-orange: #fe9900;
+  $cirrus-dark-blue: #345399;
+  $cirrus-light-blue: #0085c6;
+  
+  $mcd-width: 5rem;
+  $mcd-height: $mcd-width * 3/5;
+  
+  .mastercard{
+    font-family: "Droid Sans", Helvetica, sans-serif;
+    position: absolute;
+    width: $mcd-width;
+    
+    font-size: 12px;
+    line-height: $mcd-height;
+    letter-spacing: -$mcd-width/75;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-shadow: -$mcd-height/75 $mcd-height/75 0 #16226a;
+    text-transform: none;
+    top: -45px;
+    right: 30px;
+    margin: 20vh auto;
+    z-index: 2;
+    
+    //Circles here
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      display: inline-block;
+      border-radius: 50%;
+      width: $mcd-height;
+    }

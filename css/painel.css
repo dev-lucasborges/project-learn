@@ -1,0 +1,167 @@
+:root {
+    /* tomato */
+    --primary-color: 255, 69, 58;
+    /*#ff453a*/
+    --hover-primary: 223, 45, 34;
+  
+    /* white */
+    --text-color: 255, 256, 256;
+  
+    /* gray-f*/
+    --secondary-color: 18, 18, 18;
+  
+    /* gray-w*/
+    --body-color-dark: 12, 12, 15;
+    /*#1c1c1e*/
+    --body-color-dark2: 42, 45, 50;
+    /*#2c2c2e*/
+    --body-color-dark3: 58,58, 60;
+  
+    /*green*/
+    --text-green-color: 48, 309, 88;
+    /*yellow*/
+    --text-yellow-color: 255, 214, 10;
+    /*red*/
+    --text-red-color: 255, 69, 58;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(var(--body-color-dark));
+    color: #eee;
+}
+
+  /*      NAVBAR      */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo{
+      font-weight: 700;
+      text-transform: lowercase;
+  }
+  
+  header{
+    padding: 9px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background 250ms ease-in;
+  }
+  
+  /*        NAVBAR END      */
+
+.boxcard{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
+  border-radius: 10px;
+  display: block;
+  height: 195px;
+  margin: 60px auto;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  width: 325px;
+}
+
+.info{
+    position: absolute;
+    left: 70px;
+    font-size: 10px;
+    margin-top: 50px;
+    list-style: none;
+    user-select: none; 
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+}
+
+.picture{
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    position: absolute;
+    margin-top: 10px;
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.info-subTitle{
+    font-weight: 700;
+}
+
+.text-muted{
+    font-weight: 900;
+}
+
+.brand{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    color: white;
+    opacity: 8%;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: default;
+    user-select: none; 
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+}
+
+.card-title, .card-subtitle{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 110px;
+    top: 7px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-subtitle{
+    font-weight: bold;
+    top: 27px;
+    left: 160px;
+}
+
+.pic-info{
+    position: absolute;
+    bottom: 40px;
+    font-size: 9px;
+    margin-left: 12px;
+}
+
+.pic-info2{
+    position: absolute;
+    bottom: 27px;
+    font-size: 9px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.logoluiz{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

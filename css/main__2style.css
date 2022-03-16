@@ -11,9 +11,9 @@
     --secondary-color: 18, 18, 18;
   
     /* gray-w*/
-    --body-color-dark: 28, 28, 30;
+    --body-color-dark: 12, 12, 15;
     /*#1c1c1e*/
-    --body-color-dark2: 44, 44, 46;
+    --body-color-dark2: 42, 45, 50;
     /*#2c2c2e*/
     --body-color-dark3: 58,58, 60;
   
@@ -317,3 +317,5 @@ input{
       border-color: rgb(var(--body-color-dark3));
     }
 }
+
+/* about */
