@@ -1,13 +1,9 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "login";
+define('HOST', '127.0.0.1');
+define('USUARIO', 'root');
+define('SENHA', '');
+define('DB', 'dados');
 
-if(!$conexao = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
-{
-
-	die("failed to connect!");
-}
-
+$conexao = mysqli_connect( HOST, USUARIO, SENHA, DB) or die ('Não foi possivel conectar')
+?>

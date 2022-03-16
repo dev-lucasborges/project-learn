@@ -1,0 +1,86 @@
+:root {
+    /* tomato */
+    --primary-color: 255, 69, 58;
+    /*#ff453a*/
+    --hover-primary: 223, 45, 34;
+  
+    /* white */
+    --text-color: 255, 256, 256;
+  
+    /* gray-f*/
+    --secondary-color: 18, 18, 18;
+  
+    /* gray-w*/
+    --body-color-dark: 12, 12, 15;
+    /*#1c1c1e*/
+    --body-color-dark2: 42, 45, 50;
+    /*#2c2c2e*/
+    --body-color-dark3: 58,58, 60;
+  
+    /*green*/
+    --text-green-color: 48, 309, 88;
+    /*yellow*/
+    --text-yellow-color: 255, 214, 10;
+    /*red*/
+    --text-red-color: 255, 69, 58;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(var(--body-color-dark));
+    color: #eee;
+}
+
+  /*      NAVBAR      */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo{
+      font-weight: 700;
+      text-transform: lowercase;
+  }
+  
+  header{
+    padding: 9px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background 250ms ease-in;
+  }
+  
+  /*        NAVBAR END      */
+
+  /*  START CSS */
+
+    input{
+      background-color: rgb(var(--body-color-dark2));
+      border: 0;
+    }
+
+    .notification{
+      background-color: rgb(var(--primary-color));
+      padding: 10px;
+      border-radius: 0.25rem;
+      margin-bottom: 10px;
+    }
+
+    .btn{
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 0.25rem;
+    }
+
+
+
