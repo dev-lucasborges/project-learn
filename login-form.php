@@ -35,17 +35,17 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./html/library.html">Biblioteca</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./html/index2.html">Ver notas</a>
+                  <a class="nav-link active" href="#">Carteirinha</a>
                 </li>
               </ul>
               <form>
-                <a class="btn btn-primary" href="./login-form.php">Login</a>
+                <a class="btn btn-primary" href="sobre.html">Sobre</a>
               </form>
             </div>
           </div>
