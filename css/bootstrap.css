@@ -4001,8 +4001,10 @@ textarea.form-control-lg {
   transition: 0.2s ease-in;
 }
 
-.nav-item:hover{
+.dark2{
+  background-color: rgb(var(--body-color-dark2));
 }
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
@@ -4111,7 +4113,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 0;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -4126,7 +4128,8 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow:cadetblue;
+  box-shadow: 0 0 0 0.1rem;
 }
 
 .navbar-toggler-icon {
@@ -4522,6 +4525,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
 }
@@ -11319,19 +11323,24 @@ textarea.form-control-lg {
 
 .bg-blur{
   backdrop-filter: blur(7px);
-  padding: 9px;
   background-color: rgba(0, 0, 0, 0.7);
-  outline: var(--bs-gray-dark) solid 1px;
+  outline: #333 solid 1px;
 }
 
 header{
-  padding: 9px;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   transition: background 250ms ease-in;
+}
+
+@media (max-width: 905px){
+  .bg-blur{
+    background-color: rgb(var(--body-color-dark2));
+    backdrop-filter: none;
+  }
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

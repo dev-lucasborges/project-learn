@@ -7,16 +7,14 @@
     <title>Learn</title>
     <link rel="icon" href="./assets/award.svg" type="image/png">
         <!--------------------------------- links-------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main__2style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap" rel="stylesheet">
     <script src="./js/sistema_de_busca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/15abb0f24e.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!------------------------------------- links end's-------------------------------->
 </head>
 <body>
@@ -162,10 +160,10 @@
 <div class=" p-2 sec text-center">
   <h1 class="display-3 h2 frh3 ">Impressionado até aqui ?</h1>
   <p class="text-muted">Certo! Então vamos começar</p>
-  <div class="container mt-5">
-    <h5 class="h5">Você pode fazer <span class="text-success">login</span> ou <span class="text-gradient">criar uma conta</span></h5>
-    <button class="btn btn-success mb-3">Já tenho uma conta</button>
-    <button class="btn btn-primary mb-3  ms-2">Ainda não tenho uma conta</button>
+  <div class="container">
+    <h5 class="h5 mb-3">Você pode fazer <span class="text-success">login</span> com sua <span class="text-success">matrícula</span> e <span class="text-success"> data de nascimento</span></span></h5>
+   <a href="login.php"><button class="btn btn-success mb-3">Fazer login</button></a>
+    <p class="text-muted">Após fazer login, você terá acesso ao <b>painel</b>, onde econtrará suas informações. </p>
   </div>
 
   <img draggable="false" class="img-fluid img-login mt-5" src="./assets/undraw_fingerprint_re_uf3f.svg" alt="">
@@ -173,29 +171,19 @@
 </div>
 
 
-<footer class="mt-5 w-100 text-start bg-black py-4 flex-shrink-0">
+<footer class="mt-5 w-100 text-start dark2 py-4 flex-shrink-0">
   <div class="container py-4">
       <div class="row gy-4">
           <div class="col-lg-4 col-md-6">
               <h5 class="h4 text-white">Learn</h5>
               <p class="small text-muted">o Learn atualmente está em desenvolvimento, pode apresentar erros e bugs</p>
-              <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://lucasborges11.vercel.app/">Lucas Borges</a></p>
-          </div>
-          <div class="col-lg-2 col-md-6">
-              <h5 class="text-white mb-3">Atalhos</h5>
-              <ul class="list-unstyled text-muted">
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="./html/about.html">Sobre</a></li>
-                  <li><a href="./html/library.html">Biblioteca</a></li>
-                  <li><a href="./html/library.html">Ver notas</a></li>
-              </ul>
+              <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved by <a class="text-primary" href="https://lucasborges11.vercel.app/">Lucas Borges</a></p>
           </div>
           <div class="col-lg-4 col-md-6">
               <h5 class="text-white mb-1">Contato</h5>
               <p class="small text-muted">Algum problema ? Entre em contato comigo!</p>
               <ul class="list-unstyled text-muted">
-                <li><a href="https://discord.gg/TW3t39D6VR">Servidor do Discord</a></li>
-                <li><a href="mailto:lucas.f.borges2005@gmail.com">Email</a></li>
+                <li><a class="text-primary" href="https://discord.gg/TW3t39D6VR">Servidor do Discord</a> | <a class="text-primary" href="mailto:lucas.f.borges2005@gmail.com">Email</a></li>
             </ul>
           </div>
       </div>

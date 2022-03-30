@@ -1,10 +1,9 @@
 /*      COLORS      */
-
-
 :root {
   /* tomato */
   --primary-color: 255, 69, 58;
   /*#ff453a*/
+  --hover-primary: 223, 45, 34;
 
   /* white */
   --text-color: 255, 256, 256;
@@ -13,10 +12,11 @@
   --secondary-color: 18, 18, 18;
 
   /* gray-w*/
-  --body-color-dark: 28, 28, 30;
+  --body-color-dark: 12, 12, 15;
   /*#1c1c1e*/
-  --body-color-dark2: 44, 44, 46;
+  --body-color-dark2: 17, 17, 17;
   /*#2c2c2e*/
+  --body-color-dark3: 58,58, 60;
 
   /*green*/
   --text-green-color: 48, 309, 88;
@@ -29,6 +29,9 @@
 
 
 /*      REUSABLE CSS        */
+.nav-item:last-child{
+  border-bottom: none;
+}
 .text-green{
   color: rgb(var(--text-green-color));
 }
@@ -84,8 +87,10 @@ ul{
     padding-left: 12px;
     padding-right: 12px;
     border: 1px solid;
-    border-color: #282828;
+    border-color: #333;
     transition: 0.5s;
+    background-color: rgb(var(--body-color-dark2));
+    border-bottom: 0;
   }
 
   .enciclopedia li{
@@ -96,11 +101,12 @@ ul{
     padding-left: 12px;
     padding-right: 12px;
     border: 1px solid;
-    border-color: #282828;
+    border-color: #333;
     transition: 0.5s;
+
   }
   
-  li:first-child{
+   li:first-child{
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
    margin-top: 0px;
@@ -109,6 +115,7 @@ ul{
   li:last-child{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom: #333 1px solid;
    }
   
   li:hover {
@@ -537,4 +544,10 @@ body {
 }
 }
 
+}
+
+@media screen and (max-width: 905px){
+  #all{
+    margin: 10px;
+  }
 }

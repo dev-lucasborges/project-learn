@@ -13,7 +13,7 @@
     /* gray-w*/
     --body-color-dark: 12, 12, 15;
     /*#1c1c1e*/
-    --body-color-dark2: 42, 45, 50;
+    --body-color-dark2: 17, 17, 17;
     /*#2c2c2e*/
     --body-color-dark3: 58,58, 60;
   
@@ -29,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: ease 0.5s;
 }
 
 body {
@@ -109,7 +110,7 @@ body {
 }
 
 header{
-  padding: 9px;
+  padding: 4px;
   position: sticky;
   top: 0;
   left: 0;
@@ -192,7 +193,7 @@ header{
 }
 
 .bg-dark2:hover{
-  background-color: rgb(var(--body-color-dark3));
+  border-color: white;
   transition: 0.6s;
 }
 
@@ -326,6 +327,12 @@ input{
       border: solid 1px;
       border-color: rgb(var(--body-color-dark3));
     }
+}
+
+@media (min-width: 1550px){
+  .img-login{
+    width: 20%;
+  }
 }
 
 /* about */
