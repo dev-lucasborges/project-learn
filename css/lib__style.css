@@ -1,4 +1,3 @@
-/*      COLORS      */
 :root {
   /* tomato */
   --primary-color: 255, 69, 58;
@@ -26,242 +25,22 @@
   --text-red-color: 255, 69, 58;
 }
 
-
-
-/*      REUSABLE CSS        */
-.nav-item:last-child{
-  border-bottom: none;
-}
-.text-green{
-  color: rgb(var(--text-green-color));
-}
-.text-red{
-  color: rgb(var(--text-red-color));
-}
-::-webkit-scrollbar {
-  width: 5px;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: ease 0.5s;
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgb(var(--primary-color));
-  border-radius: 9px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  color: white;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
+body{
   background-color: rgb(var(--body-color-dark));
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-/*      REUSABLE END        */
-
-#all{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.allcontent{
-  text-align: center;
-}
-
-ul{
-  padding: 0;
-}
-
-.my-info-1 li{
-    padding-left: 0;
-    list-style: none;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border: 1px solid;
-    border-color: #333;
-    transition: 0.5s;
-    background-color: rgb(var(--body-color-dark2));
-    border-bottom: 0;
-  }
-
-  .enciclopedia li{
-    padding-left: 0;
-    list-style: none;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border: 1px solid;
-    border-color: #333;
-    transition: 0.5s;
-
-  }
-  
-   li:first-child{
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   margin-top: 0px;
-  }
-  
-  li:last-child{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom: #333 1px solid;
-   }
-  
-  li:hover {
-    background-color: rgb(var(--secondary-color));
-    transition: 0.5s;
-  }
-
-
-.search__bar {
-  text-align: center;
-  border-radius: 8px;
-  border: 0;
-  background-color: rgb(var(--secondary-color));
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  border-color: rgb(var(--primary-color));
-  transition: 1s;
-}
-
-.search__bar:focus{
-  outline: none;
-}
-.search__bar:focus {
-  border: 1px solid;
-  border-color: rgb(var(--primary-color));
-  border-radius: 19px;
-  transition: 1s;
-}
-.btnn {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  padding: 0.6rem 0.9rem;
-  margin: 1rem;
-  cursor: pointer;
-  border-radius: 11px;
-  transition: all 0.3s ease;
-}
-
-.btn-glow:hover {
-  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
-}
-
-.btn-primary {
-  background-color: rgb(var(--primary-color));
-  border: 1px solid rgb(var(--primary-color));
-  color: rgb(var(--text-color));
-}
-
-
-.sec__title {
-  background-color: rgb(var(--secondary-color));
-  padding: 12px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right:20px;
-  border-bottom-right-radius: 18px;
-  border-bottom-left-radius: 18px;
-}
-
-.select-area{
-  margin-top: 60px;
-  background-color: rgb(var(--secondary-color));
-  padding: 10px;
-  border-bottom: 1px solid rgb(var(--body-color-dark));
-  margin-left: 20px;
-  margin-right:20px;
-  border-top-right-radius: 18px;
-  border-top-left-radius: 18px;
-}
-
-
-option{
-  background-color: #282828;
-  border: 0;
-}
-
-@media only screen and (max-width: 613px) {
-
-  li {
-    font-size: 15px;
-  }
-}
-
-
-.hide {
-  display: none;
-}
-
-
-/*      NAVBAR      */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box
-}
-
-body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter' , sans-serif;
+  color: #fff;
 }
 
 .logo{
-    font-weight: 700;
-    text-transform: lowercase;
-}
-
-/*        NAVBAR END      */
-
-.info-bg{
-  background-color: rgb(var(--body-color-dark2));
-  padding: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 9px;
-  margin-left: 1rem;
-}
-
-.borderrr{
-  border-radius: 9px;
-}
-.pointer{
-  cursor: pointer;
-}
-
-.blur{
-  filter:blur(5px)
-}
-
-.outline{
-  text-decoration:underline;
-}
-
-.info-btn{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
-  transition: 0.5s;
-}
-
-.info-btn:hover{
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 .timeline li:hover{
@@ -544,10 +323,4 @@ body {
 }
 }
 
-}
-
-@media screen and (max-width: 905px){
-  #all{
-    margin: 10px;
-  }
 }

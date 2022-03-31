@@ -167,9 +167,11 @@ header{
 }
 
 .imgg{
-    border-radius: 18px;
+    border-radius: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 50vh;
+    border: 9px solid black;
 }
 
 .margin-5 {

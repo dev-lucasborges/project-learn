@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 .main-img2{
   width: 30rem;
 }
@@ -71,4 +80,18 @@
 .first-p:hover, .sec-p:hover{
   border-color: white;
   transition: 0.7s;
+}
+
+.prof img{
+  width: 13vh;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  border:solid 1px;
+  padding: 5px;
+  border-color: rgb(var(--body-color-dark2));
+}
+
+.prof img:hover{
+  border-color: white;
+  width: 16vh;
 }
