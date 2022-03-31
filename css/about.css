@@ -72,3 +72,13 @@
   border-color: white;
   transition: 0.7s;
 }
+
+.prof img{
+  width: 15vh;
+  border: 1px solid;
+  padding: 10px;
+  border-color: rgb(var(--body-color-dark3));
+  border-radius: 118px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
