@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn</title>
-    <link rel="icon" href="./assets/award.svg" type="image/png">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="./assets/award.svg" type="image/png">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/main__2style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap" rel="stylesheet">
-    <script src="./js/sistema_de_busca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <script src="https://kit.fontawesome.com/15abb0f24e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
 
@@ -29,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/library.html">Biblioteca</a>
+              <a class="nav-link" href="./pages/library.html">Biblioteca</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/index2.html">Voluntários</a>
+              <a class="nav-link" href="./pages/gremio.html">Grêmio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./painel.php">Carteirinha</a>
@@ -50,147 +51,60 @@
   </header>
 
 <main>
-    <div class="margin-5 padding-5 sec">
-        <h2 class="display-3 h1 frh1 parallax">Veja suas notas</h2>
-        <div class="container2 parallax">
-          <p class="h1">  <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-        </div>
-      
-        <p class="text-muted home-intro parallax">Notas, horários, sistema de Biblioteca e muito mais!</p>
-        <a href="./login-form.php" class="btn btn-primary my-3 parallax go">Entrar</a>
-        <div class="my-3 main-icon parallax">
-          <i class="uil uil-arrow-down"></i>
-          <a href="#section2">Quero conhecer</a>
-        </div>
-        <img  draggable="false" id="section2" src="./assets/undraw_road_to_knowledge_m8s0.svg" alt="" class="img-fluid main-img">
+    <div data-rellax-speed="3" class="parallax  padding-5 sec">
+        <h2 class="display-3 frh1 text-center">Vamos conhecer o learn e suas extenções!</h2>
+        <p class="text-muted home-intro text-center">Vou te contar mais um pouco sobre mim e esse projeto...</p>
+        <img draggable="false" id="section2" src="./assets/undraw_programming_re_kg9v.svg" alt="" class=" mt-5 img-fluid main-img2 rounded mx-auto d-block">
     </div>
 
     <div class="margin-5 p-2 sec2">
-      <h1 class="display-3 h1 frh1 frh2">Bonito de se ver!</h1>
-      <p class="text-muted">Pensado estratégicamente, para ver facilmente.</p>
+      <h1 data-rellax-speed="3" class="h1 frh1 frh2 parallax">Minha apresentação</h1>
+      <div class="prof">
+        <img data-rellax-speed="2" class="parallax" src="./assets/1653757435032.png" alt="">
+      </div>
+      <div data-rellax-speed="1" class="d-info parallax">
+          <p class="first-p">Acho justo começar me apresentando. Me chamo Lucas Borges, tenho 17 anos. Sou programador, mais especificamente Desenvolvedor Web. Atualmente cursando o 3º ano do ensino médio no CE Luiz Reid, Presidente do Grêmio Estudantil e fundador do Learn.</p>
+          <hr class="m-3">
+          <p class="sec-p">Sou uma pessoa muito proativa e determinada, costumo ver o pior lado das coisas e melhorar a partir dele. Comecei a programar aos 12 anos, quando fiz meu primero jogo (que por acaso hoje está horrível). Enfim, vamos para os meus projetos.</p>
+      </div>
 
-      <div id="carouselExampleControlsNoTouching" class="carousel slide car" data-bs-touch="false" data-bs-interval="false">
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img draggable="false" src="./assets/Screenshot_20211229-021409_Chrome.png" class="d-block w-100" alt="...">
-          </div>
-
-          <div class="carousel-item">
-            <img draggable="false" src="./assets/aulas-mobile.png" class="d-block w-100">
-          </div>
-          
-
+        <h1 class="h1 frh1">learn</h1>
+        <div class="d-info">
+            <p class="first-p">Esse é sem dúvidas o meu maior projeto. O project-learn traz suas notas atualizadas bimestralmete através de relatórios, seu quadro de horários e sua carteirinha como identificação.</p>
+            <hr class="m-3">
+            <p class="sec-p">Falando mais técnicamente, nesse projeto usei todo meu conhecimento de HTML, CSS, JavaScript e para minha surpresa, PHP, uma liguagem que eu não tinha conhecimento algum, mesmo assim, sai da minha zona de conforto (afinal, é isso que é realmente buscar evolução) e aprendi bastante sobre. Os projetos <a class="text-primary" href="./pages/library">Biblioteca do CE Luiz Reid</a> e <a class="text-primary" href="./login-form.php">Carteirinha de Estudante</a> são extenções desse projeto.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <div class="container container-img mb-5">
-        <div class="row">
-          <div class="col">
-            <img draggable="false" class="img-fluid imgg" src="./assets/Picsart_22-03-31_17-56-42-678.png">
-          </div>
-        </div>
-      </div>
-  </div>
-<hr class="m-5 pd-5">
-  <div id="section3"class="m-2 p-2 text-center">
-    <h1 class="display-3 h1 frh1 frh2">Biblioteca do CE Luiz Reid</h1>
-    <p class="text-muted">Pesquise o livro que quiser, ache onde quer que esteja!</p>
-    <div class="container-fluid">
-      <div>
-        <div class="col">
-          <video class="library-video img-res2" autoplay loop muted>
-            <source draggable="false" src="./assets/library-mobile.mp4">
-          </video>
-          <div>
-            <video class="library-video img-res" autoplay loop muted>
-              <source draggable="false" src="./assets/library-d-ready_Trim.mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
+
+            <h1 class="h1 frh1">Biblioteca CE Luiz Reid</h1>
+            <div class="d-info">
+                <p class="first-p">Fui o coordenador geral deste projeto. Uma nova biblioteca estava sendo construida, e precisamos catalogar e digitalizar os livros antes de transportá-los. Para isso usamos a plataforma Notion. Dias que não estamos em aula ou em horário usamos para catalogar.</p>
+                <hr class="m-3">
+                <p class="sec-p"> Como ainda sou aluno, não tenho o tempo todo para orientar os alunos na biblioteca, para resolver esse problema, selecionei alunos de turmas diferentes para serem coordenadores, cada um ficando com um grupo de alunos durante a semana.</p>
+            </div>
+
+
+                <h1 class="h1 frh1">Carteirinha de Estudante</h1>
+                <div class="d-info">
+                    <p class="first-p">A regra é simples, se você está matrículado em tal escola, estude nela. Nesse "projeto" estou desenvolvi a identificação necessária para entrar na escola. No futuro veio a incluir outras escolas estaduais parceiras(e sim, eu sou remunerado pelas outras escolas).</p>
+                    <hr class="m-3">
+                    <p class="sec-p">Todas estão sendo geradas automaticamente através de banco de dados MySQL e PHP. A novidade é que você vai poder usar a carteirinha pelo celular, basta fazer login em <a class="text-primary" href="./login-form.php">Carteirinha</a>.</p>
+                    
+                </div>
+
+
+
+                        <p>Se todos nós dermos o melhor de nós para melhorar nosso pedacinho, o mundo se torna um lugar melhor. Bem, é isso, espero que tenha gostado da leitura.</p>
+                        <hr class="m-3">
+                        <p class="">Caso tenha interesse em participar em um dos projetos, entre em contato comigo pelo Direct do Instagram, <b class="text-success">@lcs_pk</b>.</p>
 </div>
 
 
-
-  <div class="sec text-center">
-    <h1 class="display-3 m-5 h1 frh1 frh2 text-gradient">Quer mais ?</h1>
-<div class="row mt-5 mx-5">
-  <div class="col bg-dark2 p-4 m-1">
-    <h1 class="h5">Fácil</h1>
-    <p class="text-muted">Pensado de forma que o uso seja <spam class="text-gradient"> simples e rápido</spam></p>
-  </div>
-      <div class="col bg-dark2 p-4 m-1">
-        <h1 class="h5">Atualizado</h1>
-        <p class="text-muted">Notas e quadro de horários <span class="text-gradient">atualizados</span> todo final de bimestre</p>
-      </div>
-</div>
-
-<div class="row mx-5">
-  <div class="col bg-dark2 p-4 m-1">
-    <h1 class="h5">Elegante</h1>
-    <p class="text-muted">Fácil de ler em <span class="text-gradient">todos</span> tamanhos de tela</p>
-  </div>
-  <div class="col bg-dark2 p-4 m-1">
-    <h1 class="h5">Seguro</h1>
-    <p class="text-muted">Não guardamos suas informações, <span class="text-gradient">apenas</span> seu nome e numero de matricúla</p>
-  </div>
-</div>
-<div class="row mx-5 mb-5">
-  
-  <div class="col bg-dark2 p-4 m-1">
-    <h1 class="h5">Totalmente de graça</h1>
-    <p class="text-muted">O <b>Learn</b> foi feito pensando em um desenvolvimento <span class="text-gradient">cada vez melhor</span> para o aluno</p>
-  </div>
-
-</div>
-
-<div class=" p-2 sec text-center">
-  <h1 class="display-3 h2 frh3 ">Impressionado até aqui ?</h1>
-  <p class="text-muted">Certo! Então vamos começar</p>
-  <div class="container">
-    <h5 class="h5 mb-3">Você pode fazer <span class="text-success">login</span> com sua <span class="text-success">matrícula</span> e <span class="text-success"> data de nascimento</span></span></h5>
-   <a href="login.php"><button class="btn btn-success mb-3">Fazer login</button></a>
-    <p class="text-muted">Após fazer login, você terá acesso ao <b>painel</b>, onde econtrará suas informações. </p>
-  </div>
-
-  <img draggable="false" class="img-fluid img-login mt-5" src="./assets/undraw_fingerprint_re_uf3f.svg" alt="">
-
-</div>
-
-
-<footer class="mt-5 w-100 text-start dark2 py-4 flex-shrink-0">
-  <div class="container py-4">
-      <div class="row gy-4">
-          <div class="col-lg-4 col-md-6">
-              <h5 class="h4 text-white">Learn</h5>
-              <p class="small text-muted">o Learn atualmente está em desenvolvimento, pode apresentar erros e bugs</p>
-              <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved by <a class="text-primary" href="https://lucasborges11.vercel.app/">Lucas Borges</a></p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-              <h5 class="text-white mb-1">Contato</h5>
-              <p class="small text-muted">Algum problema ? Entre em contato comigo!</p>
-              <ul class="list-unstyled text-muted">
-                <li><a class="text-primary" href="https://discord.gg/TW3t39D6VR">Servidor do Discord</a> | <a class="text-primary" href="mailto:lucas.f.borges2005@gmail.com">Email</a></li>
-            </ul>
-          </div>
-      </div>
-  </div>
-</footer>
-</div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  var rellax = new Rellax('.parallax');
+  </script>
 <script src="./js/app.js"></script>
 </main>
-<script src="https://kit.fontawesome.com/15abb0f24e.js" crossorigin="anonymous"></script>
-
 </body>
 </html>

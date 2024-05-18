@@ -33,8 +33,9 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(var(--body-color-dark));
+    background-color: #0c0c0f;
     color: #eee;
+    
 }
 
   /*      NAVBAR      */
@@ -52,74 +53,39 @@ body {
   
   header{
     padding: 9px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     transition: background 250ms ease-in;
+    background-color: #0c0c0f;
   }
   
   /*        NAVBAR END      */
 
-.boxcard{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
-  border-radius: 10px;
-  display: block;
-  height: 195px;
-  margin: 60px auto;
-  position: relative;
-  text-align: left;
-  text-transform: uppercase;
-  width: 325px;
+  body{
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
 
-.info{
+.vision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.marca{
+    top: 20px;
     position: absolute;
-    left: 70px;
-    font-size: 10px;
-    margin-top: 50px;
-    list-style: none;
-    user-select: none; 
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-}
-
-.picture{
-    margin: 0;
-    padding: 0;
-    width: 5rem;
-    position: absolute;
-    margin-top: 10px;
-    -webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--o-user-select: none;
-user-select: none;
-}
-
-.info-subTitle{
-    font-weight: 700;
-}
-
-.text-muted{
-    font-weight: 900;
-}
-
-.brand{
-    position: absolute;
-    top: 0px;
-    right: 0;
+    text-align: center;
+    align-items: middle;
     color: white;
     opacity: 8%;
     z-index: 1;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 80px;
-    margin-top: 10px;
-    margin-right: 10px;
+    font-size: 5.7rem;
     cursor: default;
     user-select: none; 
     -webkit-user-select: none; /* Safari */        
@@ -127,41 +93,540 @@ user-select: none;
     -ms-user-select: none; /* IE10+/Edge */
 }
 
-.card-title, .card-subtitle{
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    left: 110px;
-    top: 7px;
+.cardd{
+    background: rgb(2,0,36);
+    background: linear-gradient(183deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
+    border-radius: 8px;
+    width: 95mm;
+    height: 65mm;
+    border: 0;
+    position: relative;
+    margin:10px;
 }
 
-.card-title{
+.carteirinhaBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carteirinha{
+  background: rgb(2,0,36);
+  background: linear-gradient(183deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
+  width: 100mm;
+  max-width: 105mm;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 10px;
+}
+
+.schoolBox{
+  font-size: 19px;
+  padding-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schoolBox span:first-child{
+  font-size: 17px;
+  margin-bottom: -8px;
+}
+
+.schoolBox span:last-child{
+  margin-top: -2px;
+}
+
+.schoolInfo{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.carteirinhaInfo{
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.pictureBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pictureBox span{
+  font-size: 10px;
+}
+
+.picture{
+  border-radius: 5px;
+  width: 33mm;
+  height: 43mm;
+  object-fit: cover;
+  margin-left: 2px;
+}
+
+.info{
+  font-size: 13px;
+  margin-left: -20px;
+}
+
+.info li{
+  list-style: none;
+  font-weight: 700;
+}
+
+.picture2{
+  border-radius: 5px;
+  width: 30mm;
+  height: 40mm;
+  margin-top: 7px;
+  -ms-object-fit: cover;
+  -moz-object-fit: cover;
+  -o-object-fit: cover;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  margin-left: 2px;
+}
+
+.barcodeBox{
+  display: flex;
+  justify-content: center;
+}
+
+.barcode{
+  background-color: white;
+  padding: 6px;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+
+.word_one{
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-clear{
+    color: #cccccc;
+}
+
+
+.date{
+    margin-top: 5px;
+    font-size: 10px;
+    width: 30mm;
     text-align: center;
 }
 
-.card-subtitle{
-    font-weight: bold;
-    top: 27px;
-    left: 160px;
+.school{
+    position: absolute;
+    bottom: 0;
+    font-size: 9px;
+    font-weight: 700;
+    margin-left: 2px;
 }
 
-.pic-info{
-    position: absolute;
-    bottom: 40px;
-    font-size: 9px;
-    margin-left: 12px;
+.school p{
+    margin: 0;
+    padding: 0;
 }
 
-.pic-info2{
-    position: absolute;
-    bottom: 27px;
-    font-size: 9px;
-    margin-left: 25px;
-    font-weight: bold;
+#name{
+    margin-bottom: -4px;
+}
+
+.cardd h1, h2{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+.cardd h2{
+    margin-top: -3px;
+    font-weight: 700;
+}
+
+.info2{
+    font-size: 11px;
+    margin-top: -150px;
+    margin-left: 90px;
+}
+
+.info2 li{
+    list-style: none;
+    font-weight: 700;
+}
+
+#curso{
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .logoluiz{
+    width: 20%;
     position: absolute;
     right: 0;
+    top: 0;
+    padding: 5px;
+}
+
+
+.qrcode{
+    position: absolute;
+    right: 5px;
+    bottom: 9px;
+    border-radius: 0.25rem;
+    background-color: white;
+    padding: 3px;
+}
+
+@media (max-width: 340px) {
+    .qrcode{
+        display: none;
+    }
+    .info{
+        font-size: 10px;
+    }
+    .school{
+        font-size: 8px;
+        max-width: 210px;
+    }
+    .cardd h1, h2{
+        text-align: center;
+        font-size: 13px;
+        margin: 0;
+    }
+
+}
+
+footer{
+    margin-top: 120px;
+    position: absolute;
     bottom: 0;
+    border-color: #151519;
+  }
+
+  
+  section{
+    position: relative;
+    height: 85vh;
+  }
+
+.picturetest{
+    border-radius: 5px;
+    width: 30mm;
+    height: 40mm;
+    margin-top: 7px;
+}
+
+
+  .not-card{
+    background-color: #16161c;
+    margin: 10px;
+    border: 1px solid;
+    border-color: #1c1c1e;
+    border-radius: 0.55rem;
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 5%);
+    min-width: 325px;
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dis-title{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: royalblue;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-color: #1c1c1e;
+    font-weight: 600;
+    text-transform:uppercase;
+  }
+
+  .dis-title h1{
+    margin-top: 0.5rem;
+  }
+
+  .not{
+    font-size: 90px;
+    text-align: center;
+  }
+
+
+  .not1{
+    padding: 7px;
+    border-top: 1px solid #1c1c1e;
+    align-items: center;
+  }
+
+  .not2{
+    padding: 7px;
+    align-items: center;
+  }
+
+  .row{
+    --bs-gutter-x: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  @media (max-width: 340px) {
+    .not-card{
+      min-width: 170px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+  }
+
+.home-title{
+  margin-top: 100px;
+}
+
+.footer-text{
+  font-size: 14px;
+}
+
+
+button a {
+  color: #fff;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  text-decoration: none;
+}
+
+/* let's shape */
+button span.shape {
+  height: 25px;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button span span {
+  content:"";
+  position: absolute;
+  margin: auto;
+  height: 8px;
+  width: 2px;
+  background: #5c636a;
+  opacity: 0;
+}
+
+button span span:nth-of-type(1) {
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+
+button span span:nth-of-type(2) {
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+button span span:nth-of-type(3) {
+  top:0;
+  bottom: 0;
+  left: -10px;
+}
+
+button span span:nth-of-type(4) {
+  top:0;
+  bottom: 0;
+  right: -10px;
+}
+
+button span span:nth-of-type(5) {
+  top: -20px;
+  left: -70%;
+  right: 0;
+  transform:rotate(-30deg);
+}
+
+button span span:nth-of-type(6) {
+  top: -20px;
+  left: 0;
+  right: -70%;
+  transform:rotate(30deg);
+}
+
+button span span:nth-of-type(7) {
+  bottom: -20px;
+  right: 0;
+  left: -70%;
+  transform:rotate(30deg);
+}
+
+button span span:nth-of-type(8) {
+  bottom: -20px;
+  left: 0;
+  right: -70%;
+  transform:rotate(-30deg);
+}
+
+/* let's animate this */
+@keyframes bounce {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+
+button.active {
+  animation: bounce 0.3s ease-out 1;
+}
+
+button.active span span:nth-of-type(1) {
+  animation: anim1 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(2) {
+  animation: anim2 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(3) {
+  animation: anim3 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(4) {
+  animation: anim4 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(5) {
+  animation: anim5 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(6) {
+  animation: anim6 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(7) {
+  animation: anim7 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(8) {
+  animation: anim8 0.4s ease-out 1;
+}
+
+@keyframes anim1 {
+  0%{transform: scaleY(0.5);opacity: 0;}
+  50%{transform: translateY(-10px) scaleY(1.4); opacity: 1;}
+  100%{transform: translateY(-20px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim2 {
+  0%{transform: scaleY(1);opacity: 0;}
+  50%{transform: translateY(10px) scaleY(1.4); opacity: 1;}
+  100%{transform: translateY(20px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim3 {
+  0%{transform: rotate(90deg) scaleX(0.5);opacity: 0;}
+  50%{transform: rotate(90deg) translateY(10px) scaleX(1.4); opacity: 1;}
+  100%{transform: rotate(90deg) translateY(20px) scaleX(0.5);opacity: 0;}
+}
+@keyframes anim4 {
+  0%{transform: rotate(90deg) scaleX(0.5);opacity: 0;}
+  50%{transform: rotate(90deg) translateY(-10px) scaleX(1.4); opacity: 1;}
+  100%{transform: rotate(90deg) translateY(-20px) scaleX(0.5);opacity: 0;}
+}
+@keyframes anim5 {
+  0%{transform: rotate(-30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(-30deg) translateY(-8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(-30deg) translateY(-16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim6 {
+  0%{transform: rotate(30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(30deg) translateY(-8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(30deg) translateY(-16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim7 {
+  0%{transform: rotate(30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(30deg) translateY(8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(30deg) translateY(16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim8 {
+  0%{transform: rotate(-30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(-30deg) translateY(8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(-30deg) translateY(16px) scaleY(0.5);opacity: 0;}
+}
+
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #151519;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+.quadro{
+  border-radius: 10px;
+}
+
+ol{
+  margin-bottom: 0!important;
+}
+
+.edit-btn{
+  position: absolute;
+  z-index: 99;
+  top: 43px;
+  left: 87px;
+  border: 0;
+  background-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.tutocard{
+  max-width: 600px;
+}
+
+.aula-card span{
+  padding: 7px;
+  border-left: 1px solid;
+  border-color: #1c1c1e;
+}
+
+.tabelaAulas thead, tbody, tfoot, tr, td, th{
+  border-color: #1c1c1e !important;
+  color: #fff !important;
+}
+
+.bg-aprovado{
+    background-color: #35C759;
 }

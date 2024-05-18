@@ -1,0 +1,175 @@
+.container2 p span.typed-text {
+  font-size: calc(1.775rem + 1.5vw);
+  font-weight: bold;
+  color: rgb(var(--primary-color));
+}
+
+.container2 p span.cursor {
+  display: inline-block;
+  background-color: #fff;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container2 p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.sec{
+    height: 82vh;
+}
+
+.frh1{
+    font-weight: 700;
+    font-size: calc(1.775rem + 1.5vw);
+}
+
+.main-img{
+    margin-top: -10em;
+    float: right;
+    width: 35rem;
+}
+
+.main-icon{
+    color: rgb(var(--primary-color));
+    font-size: 1.5rem;
+}
+
+.main-icon:hover{
+    color: rgb(var(--hover-primary));
+    transition: 1s;
+    cursor: pointer;
+}
+
+.sec2{
+    text-align: center;
+    transition: all 1s;
+}
+
+.frh2{
+    max-width: none;
+    font-weight: 700;
+}
+
+.container-img{
+    height: 300px;
+    text-align: center;
+}
+
+#iphone{
+ width: 100%;
+}
+
+#mac{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.margin-5 {
+    margin: 3rem;
+}
+
+.padding-5 {
+    padding: 3rem;
+}
+
+.frh3{
+    font-weight: 700;
+}
+
+.subtext{
+  font-weight: 700;
+  color: rgb(var(--primary-color));
+}
+
+.go{
+  background-color: rgb(var(--body-color-dark));
+  margin-top: -20px;
+}
+
+.go:hover{
+  background-color: rgb(var(--primary-color));
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #f12424, #ff453a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.img-login{
+  width: 35%;
+}
+
+.title-sec{
+  max-width: 400px;
+}
+
+.id-img{
+  width: 100%;
+}
+
+@media (max-width: 905px){
+
+    .main-img{
+        margin-top: 3rem;
+    }
+
+    .margin-5{
+        margin: 0;
+    }
+
+    .car{
+        display: block;
+    }
+
+    .padding-5 {
+        padding: 2rem !important;
+      }
+
+    .frh3{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .margin-5{
+        margin: 1rem;
+    }
+
+    .row{
+      flex-direction: column;
+    }
+
+}
+
+@media (min-width: 905px){
+
+  .id-img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1550px){
+  .img-login{
+    width: 20%;
+  }
+}
+
+@media (max-width: 280px){
+  .margin-5{
+    margin: 0;
+  }
+  .padding-5{
+    margin: 0;
+  }
+}

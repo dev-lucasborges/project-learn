@@ -1,0 +1,188 @@
+:root {
+    /* tomato */
+    --primary-color: 255, 69, 58;
+    /*#ff453a*/
+    --hover-primary: 223, 45, 34;
+  
+    /* white */
+    --text-color: 255, 256, 256;
+  
+    /* gray-f*/
+    --secondary-color: 18, 18, 18;
+  
+    /* gray-w*/
+    --body-color-dark: 12, 12, 15;
+    /*#1c1c1e*/
+    --body-color-dark2: 42, 45, 50;
+    /*#2c2c2e*/
+    --body-color-dark3: 58,58, 60;
+  
+    /*green*/
+    --text-green-color: 48, 309, 88;
+    /*yellow*/
+    --text-yellow-color: 255, 214, 10;
+    /*red*/
+    --text-red-color: 255, 69, 58;
+  }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  a{
+  text-decoration: none !important;
+  color: inherit !important;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  /*      NAVBAR      */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo{
+      font-weight: 700;
+      text-transform: lowercase;
+  }
+  
+  header{
+    padding: 9px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background 250ms ease-in;
+  }
+  
+  /*        NAVBAR END      */
+  
+  body{
+    font-family: 'Inter', sans-serif;
+    color: black;
+  }
+
+.carteirinhaBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carteirinha{
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(183deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
+    width: 100mm;
+    max-width: 105mm;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 10px;
+  }
+  
+  .schoolBox{
+    font-size: 19px;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .schoolBox span:first-child{
+    font-size: 17px;
+    margin-bottom: -8px;
+  }
+  
+  .schoolBox span:last-child{
+    margin-top: -2px;
+  }
+  
+  .schoolInfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+  
+  .carteirinhaInfo{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  .pictureBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pictureBox span{
+    font-size: 10px;
+  }
+  
+  .picture{
+    border-radius: 5px;
+    width: 33mm;
+    height: 43mm;
+    object-fit: cover;
+    margin-left: 2px;
+  }
+  
+  .info{
+    font-size: 13px;
+    margin-left: -20px;
+  }
+  
+  .info li{
+    list-style: none;
+    font-weight: 700;
+  }
+  
+  .picture2{
+    border-radius: 5px;
+    width: 30mm;
+    height: 40mm;
+    margin-top: 7px;
+    -ms-object-fit: cover;
+    -moz-object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit: cover;
+    object-fit: cover;
+    margin-left: 2px;
+  }
+  
+  .barcodeBox{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .barcode{
+    background-color: white;
+    padding: 6px;
+    border-radius: 2px;
+    margin-top: 4px;
+  }
+  
+  .text-clear{
+    color: #cccccc;
+}
+
+.limited-text {
+    width: 200px; /* Largura máxima da coluna */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Oculta o texto que ultrapassar a largura definida */
+    text-overflow: ellipsis; /* Adiciona reticências no final do texto quando ele é cortado */
+  }

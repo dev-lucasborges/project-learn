@@ -1,18 +1,5 @@
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:visited {
-  color: white;
-}
-
 .main-img2{
   width: 30rem;
-}
-
-.my-info{
- background-color: aqua;
 }
 
 .d-info{
@@ -22,6 +9,9 @@ a:visited {
 }
 
 .first-p{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
   width: 500px;
   border: 1px solid;
@@ -59,39 +49,23 @@ a:visited {
   }
 }
 
-.frh2{
-
-  background: -webkit-linear-gradient(157deg, rgb(27, 15, 190) 36%, rgba(224,4,187,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.noselect { 
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-} 
-
 .first-p:hover, .sec-p:hover{
   border-color: white;
   transition: 0.7s;
 }
 
 .prof img{
-  width: 13vh;
-  border-radius: 100px;
-  margin-bottom: 20px;
-  border:solid 1px;
-  padding: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border:1px solid;
   border-color: rgb(var(--body-color-dark2));
+  margin-bottom: 10px;
 }
 
 .prof img:hover{
   border-color: white;
-  width: 16vh;
+  width: 220px;
+  height: 220px;
 }

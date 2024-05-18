@@ -55,6 +55,9 @@ body{
   list-style-type: none;
 }
 
+.heaaa{
+  padding: 4px;
+}
 .timeline:before {
   position: absolute;
   left: 50%;
